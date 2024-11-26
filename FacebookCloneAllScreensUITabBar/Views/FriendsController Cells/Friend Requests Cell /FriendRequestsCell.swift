@@ -16,14 +16,22 @@ class FriendRequestsCell: UITableViewCell {
     @IBOutlet weak var rightMutualImage: UIImageView!
     @IBOutlet weak var mutualLabel: UILabel!
     
+    @IBOutlet weak var confirmButtonLabel: UIButton!
+    @IBOutlet weak var deleteButtonLabel: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         // Making the images look rounded
-        mainImageView.layer.cornerRadius = mainImageView.frame.size.height / 3
-        leftMutualImage.layer.cornerRadius = leftMutualImage.frame.size.height / 3
-        rightMutualImage.layer.cornerRadius = rightMutualImage.frame.size.height / 3
+        mainImageView.layer.cornerRadius = mainImageView.frame.size.height / 2
+        leftMutualImage.layer.cornerRadius = leftMutualImage.frame.size.height / 2
+        rightMutualImage.layer.cornerRadius = rightMutualImage.frame.size.height / 2
+        
+        confirmButtonLabel.layer.cornerRadius = confirmButtonLabel.frame.size.height / 5
+        
+        deleteButtonLabel.layer.cornerRadius = deleteButtonLabel.frame.size.height / 5
         
     }
 

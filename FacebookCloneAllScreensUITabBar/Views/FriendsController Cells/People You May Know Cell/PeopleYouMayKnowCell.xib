@@ -20,7 +20,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ITs-l0-3uN" userLabel="Full Stack View">
                         <rect key="frame" x="16.666666666666657" y="11.666666666666664" width="303" height="80"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oTU-xT-3wg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oTU-xT-3wg">
                                 <rect key="frame" x="0.0" y="0.0" width="78" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="LfT-f1-3gY"/>
@@ -58,24 +58,24 @@
                                             <constraint firstItem="fAg-lV-DjB" firstAttribute="top" secondItem="ehd-Gd-ZRO" secondAttribute="top" constant="2.3333333333333348" id="gHc-jQ-zkh"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="19M-Uz-Z3e" userLabel="Images and mutual Stack View">
-                                        <rect key="frame" x="0.0" y="20.666666666666671" width="212" height="21.333333333333329"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="19M-Uz-Z3e" userLabel="Images and mutual Stack View">
+                                        <rect key="frame" x="0.0" y="20.666666666666671" width="205" height="21.333333333333329"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aw-HE-oCH">
                                                 <rect key="frame" x="0.0" y="0.0" width="34" height="21"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-ga-6PB" userLabel="Two images Stack View">
-                                                        <rect key="frame" x="0.0" y="1" width="34" height="18"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-ga-6PB" userLabel="Two images Stack View">
+                                                        <rect key="frame" x="0.0" y="1" width="29" height="18"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-YM-S2u">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-YM-S2u">
                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="18"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="18" id="UxB-Nn-ogg"/>
                                                                     <constraint firstAttribute="width" constant="17" id="bhA-jy-jcV"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R0I-XR-1ZK">
-                                                                <rect key="frame" x="17" y="0.0" width="17" height="18"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R0I-XR-1ZK">
+                                                                <rect key="frame" x="12" y="0.0" width="17" height="18"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="17" id="AfV-Ya-3aB"/>
                                                                     <constraint firstAttribute="height" constant="18" id="gDO-Zi-hf1"/>
@@ -91,7 +91,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iTh-yc-l3o">
-                                                <rect key="frame" x="41.999999999999986" y="0.0" width="170" height="18"/>
+                                                <rect key="frame" x="34.999999999999986" y="0.0" width="170" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="170" id="Dca-Ot-Rjt"/>
                                                     <constraint firstAttribute="height" constant="18" id="NJg-af-pTW"/>
@@ -102,7 +102,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-8b-rLM" userLabel="Buttons Stack View">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-8b-rLM" userLabel="Buttons Stack View">
                                         <rect key="frame" x="0.0" y="44" width="214" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSL-tn-84a">
@@ -151,6 +151,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="PLl-su-vdv"/>
             <connections>
+                <outlet property="addButtonLabel" destination="xSL-tn-84a" id="ByM-SC-UZQ"/>
+                <outlet property="deleteButtonLabel" destination="wzF-JR-Ig0" id="hKR-eb-Lho"/>
                 <outlet property="leftMutualImage" destination="6JX-YM-S2u" id="I0T-Jh-1dB"/>
                 <outlet property="mainImageView" destination="oTU-xT-3wg" id="6L3-hv-hFI"/>
                 <outlet property="mutualLabel" destination="iTh-yc-l3o" id="h5x-6k-yCP"/>

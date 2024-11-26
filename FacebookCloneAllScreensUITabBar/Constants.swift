@@ -42,7 +42,7 @@ struct K {
         }
         
         struct NibNames {
-            static let friendsRequestsCellNibName = "FriendsRequestsCell"
+            static let friendsRequestsCellNibName = "FriendRequestsCell"
             static let friendsBodyCellNibName = "FriendsBodyCell"
             static let friendsHeaderCellNibName = "FriendsHeaderCell"
             static let friendsRequestsHeaderCellNibName = "FriendsRequestsHeaderCell"

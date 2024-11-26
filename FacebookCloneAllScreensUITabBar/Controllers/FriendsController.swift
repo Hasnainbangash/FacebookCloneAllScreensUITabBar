@@ -11,30 +11,26 @@ class FriendsController: UIViewController {
     
     @IBOutlet weak var friendsControllerTableView: UITableView!
     
-    var friends: [Any] = [
-        
-    ]
-    
     var friendsRequest = [
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture2")!, rightMutualImage: UIImage(named: "picture3")!, mutualLabel: "10 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture5")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture2")!, rightMutualImage: UIImage(named: "picture3")!, mutualLabel: "10 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture2")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture4")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture2")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture2")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture3")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
     ]
     
     var peopleYouMayKnow = [
         
         FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture2")!, rightMutualImage: UIImage(named: "picture3")!, mutualLabel: "10 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture2")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture5")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture2")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture3")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture2")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture4")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
     ]
     
     override func viewDidLoad() {
@@ -70,7 +66,7 @@ extension FriendsController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return friends.count
+            return 1
         case 1:
             return friendsRequest.count
         case 2:
@@ -136,13 +132,13 @@ extension FriendsController: UITableViewDelegate {
         
         switch indexPath.section {
         case 0:
-            return 250
+            return 55
         case 1:
-            return 250
+            return 100
         case 2:
-            return 250
+            return 100
         default:
-            return 250
+            return 100
         }
         
     }
@@ -172,11 +168,16 @@ extension FriendsController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 55
-    }
-
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 40
+        switch section {
+        case 0:
+            return 55
+        case 1:
+            return 40
+        case 2:
+            return 40
+        default:
+            return 40
+        }
     }
     
 }
