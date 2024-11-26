@@ -116,6 +116,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Confirm">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="confirmButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="I8V-KW-Zf1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zs0-ad-5zR">
                                                 <rect key="frame" x="113" y="0.0" width="101" height="36"/>
@@ -127,6 +130,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Delete">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="deleteButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qXr-s5-tQM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -144,6 +150,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftMutualImage" destination="yM7-GU-Lct" id="gza-KF-1sc"/>
+                <outlet property="mainImageView" destination="TiJ-xL-5tD" id="IR6-WA-LSp"/>
+                <outlet property="mutualLabel" destination="sYN-kb-lDL" id="cVI-LF-NCw"/>
+                <outlet property="nameLabel" destination="8r8-Oj-CGz" id="2Xm-aS-kms"/>
+                <outlet property="rightMutualImage" destination="ulA-N2-sRm" id="L0U-Bz-AHF"/>
+                <outlet property="timeLabel" destination="Qv5-yA-rF7" id="PB5-xE-tIT"/>
+            </connections>
             <point key="canvasLocation" x="151.90839694656489" y="24.295774647887324"/>
         </tableViewCell>
     </objects>
