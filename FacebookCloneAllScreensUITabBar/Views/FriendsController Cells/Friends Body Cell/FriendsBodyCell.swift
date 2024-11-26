@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Friends_Body_Cell: UITableViewCell {
+class FriendsBodyCell: UITableViewCell {
 
     @IBOutlet weak var leftView: UIView!
     @IBOutlet weak var middleView: UIView!
