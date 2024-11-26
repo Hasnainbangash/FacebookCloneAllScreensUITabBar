@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  FacebookCloneAllScreensUITabBar
+//  FacebookClone
 //
-//  Created by Elexoft on 26/11/2024.
+//  Created by Muhammad Hasnain Bangash on 18/11/2024.
 //
 
 import UIKit
