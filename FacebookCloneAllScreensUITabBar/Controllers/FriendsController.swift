@@ -15,22 +15,22 @@ class FriendsController: UIViewController {
         
         FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture5")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture2")!, rightMutualImage: UIImage(named: "picture3")!, mutualLabel: "10 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture4")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture4")!, nameLabel: "Trevor", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "Michael", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture3")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture3")!, nameLabel: "Jimmy", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
     ]
     
     var peopleYouMayKnow = [
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture2")!, rightMutualImage: UIImage(named: "picture3")!, mutualLabel: "10 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture1")!, nameLabel: "John", timeLabel: "5", leftMutualImage: UIImage(named: "picture2")!, rightMutualImage: UIImage(named: "picture3")!, mutualLabel: "10 mutual friends"),
         
         FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture5")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture3")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture3")!, nameLabel: "Trevor", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
         
-        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture4")!, nameLabel: "Franklin", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
+        FriendRequests(type: .friendsRequest, mainImage: UIImage(named: "picture4")!, nameLabel: "Jimmy", timeLabel: "5", leftMutualImage: UIImage(named: "picture4")!, rightMutualImage: UIImage(named: "picture5")!, mutualLabel: "5 mutual friends"),
     ]
     
     override func viewDidLoad() {
