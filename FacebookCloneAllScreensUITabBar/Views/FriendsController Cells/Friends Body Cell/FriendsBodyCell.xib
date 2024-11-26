@@ -26,7 +26,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MtQ-i9-6EK">
                                         <rect key="frame" x="7" y="3.3333333333333339" width="88" height="21"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fYy-5S-SJu">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fYy-5S-SJu">
                                                 <rect key="frame" x="0.0" y="3.9999999999999991" width="10" height="13"/>
                                                 <color key="tintColor" red="0.14117647058823529" green="0.51372549019607838" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -119,7 +119,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="dot.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

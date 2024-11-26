@@ -1,5 +1,5 @@
 //
-//  FriendRequestsCell.swift
+//  PeopleYouMayKnowCell.swift
 //  FacebookCloneAllScreensUITabBar
 //
 //  Created by Elexoft on 26/11/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FriendRequestsCell: UITableViewCell {
+class PeopleYouMayKnowCell: UITableViewCell {
 
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -42,7 +42,7 @@ class FriendRequestsCell: UITableViewCell {
         self.mutualLabel.text = mutualLabel
     }
     
-    @IBAction func confirmButtonPressed(_ sender: UIButton) {
+    @IBAction func addButtonPressed(_ sender: UIButton) {
     }
     
     @IBAction func deleteButtonPressed(_ sender: Any) {

@@ -31,4 +31,24 @@ struct K {
         }
     }
     
+    struct FriendsCell {
+        struct Identifiers {
+            static let friendsRequestsCellIdentifier = "friendRequestsReuseableCell"
+            static let friendsBodyCellIdentifier = "FriendsBodyReuseableCell"
+            static let friendsHeaderCellIdentifier = "FriendsHeaderReuseableCell"
+            static let friendsRequestsHeaderCellIdentifier = "FriendsRequestsHeaderReuseableCell"
+            static let peopleYouMayKnowCellIdentifier = "PeopleYouMayKnowReuseableCell"
+            static let peopleYouMayKnowHeaderCellIdentifier = "PeopleYouMayKnowHeaderReuseableCell"
+        }
+        
+        struct NibNames {
+            static let friendsRequestsCellNibName = "FriendsRequestsCell"
+            static let friendsBodyCellNibName = "FriendsBodyCell"
+            static let friendsHeaderCellNibName = "FriendsHeaderCell"
+            static let friendsRequestsHeaderCellNibName = "FriendsRequestsHeaderCell"
+            static let peopleYouMayKnowCellNibName = "PeopleYouMayKnowCell"
+            static let peopleYouMayKnowHeaderCellNibName = "PeopleYouMayKnowHeaderCell"
+        }
+    }
+    
 }

@@ -125,14 +125,29 @@
                     <view key="view" contentMode="scaleToFill" id="NBZ-dZ-brB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ov4-XB-qnF">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ARH-27-Q6i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ov4-XB-qnF" firstAttribute="trailing" secondItem="ARH-27-Q6i" secondAttribute="trailing" id="SBD-XT-9aP"/>
+                            <constraint firstItem="ov4-XB-qnF" firstAttribute="top" secondItem="ARH-27-Q6i" secondAttribute="top" id="ktx-Zp-AwA"/>
+                            <constraint firstItem="ov4-XB-qnF" firstAttribute="bottom" secondItem="ARH-27-Q6i" secondAttribute="bottom" id="oT5-Q9-ibX"/>
+                            <constraint firstItem="ov4-XB-qnF" firstAttribute="leading" secondItem="ARH-27-Q6i" secondAttribute="leading" id="wHt-Oy-fyk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="person.2" catalog="system" selectedImage="person.2.fill" id="hZj-8w-8HT"/>
+                    <connections>
+                        <outlet property="friendsControllerTableView" destination="ov4-XB-qnF" id="2WP-6A-S8X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6CZ-bI-Cyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="-35"/>
+            <point key="canvasLocation" x="674.04580152671758" y="-35.211267605633807"/>
         </scene>
         <!--Item-->
         <scene sceneID="pgi-C2-IlK">
