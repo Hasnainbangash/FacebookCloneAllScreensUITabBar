@@ -156,16 +156,31 @@
                     <view key="view" contentMode="scaleToFill" id="rCy-r0-A3r">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IUH-Lg-xMe">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XQm-Kp-eIM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="leading" secondItem="XQm-Kp-eIM" secondAttribute="leading" id="4Kn-Mh-N4Y"/>
+                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="top" secondItem="XQm-Kp-eIM" secondAttribute="top" id="EgB-pB-X69"/>
+                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="trailing" secondItem="XQm-Kp-eIM" secondAttribute="trailing" id="Tfl-ll-wzM"/>
+                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="bottom" secondItem="XQm-Kp-eIM" secondAttribute="bottom" id="Yu5-cU-N33"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="storefront" catalog="system" id="kGx-ck-a4H">
                         <imageReference key="selectedImage" image="storefront.fill" catalog="system" variableValue="1"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="marketplaceControllerTableView" destination="IUH-Lg-xMe" id="buD-R0-qBU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXT-Il-Bgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808" y="-35"/>
+            <point key="canvasLocation" x="1806.8702290076335" y="-35.211267605633807"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h79-7w-MU2">
