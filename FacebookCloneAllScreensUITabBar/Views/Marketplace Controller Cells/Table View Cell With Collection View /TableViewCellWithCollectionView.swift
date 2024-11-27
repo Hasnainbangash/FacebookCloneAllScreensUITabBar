@@ -16,6 +16,12 @@ class TableViewCellWithCollectionView: UITableViewCell {
     var collectionViewMarketplace = [
         CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 10,000 Toyota"),
         CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 50,0000 Carolla"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 70,000 Ford"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 10,000 Toyota"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 50,0000 Carolla"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 70,000 Ford"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 10,000 Toyota"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 50,0000 Carolla"),
         CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 70,000 Ford")
     ]
     
@@ -62,9 +68,9 @@ extension TableViewCellWithCollectionView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemPerRow: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2
-        let padding: CGFloat = 2
+        let padding: CGFloat = 10
         let totalPadding = padding * (itemPerRow - 1)
-        let availableWidth = collectionView.frame.width - totalPadding
+        let availableWidth = contentCollectionView.frame.width - totalPadding
         let itemWidth = availableWidth / itemPerRow
 
         return CGSize(width: itemWidth, height: itemWidth)
