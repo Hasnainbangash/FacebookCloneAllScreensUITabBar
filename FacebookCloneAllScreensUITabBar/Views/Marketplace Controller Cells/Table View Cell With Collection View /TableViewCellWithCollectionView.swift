@@ -14,15 +14,15 @@ class TableViewCellWithCollectionView: UITableViewCell {
     var marketPlaceController = MarketplaceController()
     
     var collectionViewMarketplace = [
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 10,000 Toyota"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 50,0000 Carolla"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 70,000 Ford"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 10,000 Toyota"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 50,0000 Carolla"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 70,000 Ford"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 10,000 Toyota"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 50,0000 Carolla"),
-        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 70,000 Ford")
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 10,000 Toyota"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 50,000 Carolla"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 700,000 Ford"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture2")!, priceLabel: "Rs 10,000 Honda"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture4")!, priceLabel: "Rs 50,0000 BMW"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 470,000 Mercedes"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 20,000 Lexus"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture4")!, priceLabel: "Rs 50,000 Suzuki"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture2")!, priceLabel: "Rs 170,000 Bently")
     ]
     
     override func awakeFromNib() {

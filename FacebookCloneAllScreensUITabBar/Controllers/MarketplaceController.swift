@@ -83,7 +83,7 @@ extension MarketplaceController: UITableViewDelegate {
         case .todayPicks:
             return 50
         case .mainPost:
-            return 800
+            return marketplaceControllerTableView.frame.height - 105
         }
     
     }
