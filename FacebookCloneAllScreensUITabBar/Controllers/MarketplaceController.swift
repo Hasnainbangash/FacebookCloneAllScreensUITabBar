@@ -81,10 +81,9 @@ extension MarketplaceController: UITableViewDelegate {
         case .sellCategories:
             return 55
         case .todayPicks:
-            return 100
+            return 50
         case .mainPost:
-            return 100
-            
+            return 200
         }
     
     }
@@ -96,7 +95,7 @@ extension MarketplaceController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 55
+        return 50
     }
     
 }
