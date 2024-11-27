@@ -51,4 +51,20 @@ struct K {
         }
     }
     
+    struct MarketplaceCell {
+        struct Identifiers {
+            static let marketplaceHeaderCellIdentifier = "marketplaceHeaderReuseableCell"
+            static let pictureLabelCollectionViewCellIdentifier = "pictureLabelCollectionViewReuseableCell"
+            static let sellCategoriesCellIdentifier = "sellCategoriesReuseableCell"
+            static let todayPicksCellIdentifier = "todayPicksReuseableCell"
+        }
+        
+        struct NibNames {
+            static let marketplaceHeaderCellNibName = "MarketplaceHeaderCell"
+            static let pictureLabelCollectionViewCellNibName = "PictureLabelCollectionViewCell"
+            static let sellCategoriesCellNibName = "SellCategoriesCell"
+            static let todayPicksCellNibName = "TodayPicksCell"
+        }
+    }
+    
 }
