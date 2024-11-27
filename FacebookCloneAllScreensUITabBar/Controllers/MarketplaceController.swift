@@ -14,15 +14,25 @@ class MarketplaceController: UIViewController {
     var marketPlaces = [
         Marketplace(type: .sellCategories, mainImage: nil, priceLabel: nil),
         Marketplace(type: .todayPicks, mainImage: nil, priceLabel: nil),
-        Marketplace(type: .mainPost, mainImage: UIImage(named: "picture3"), priceLabel: "Rs 10,000 Toyota"),
-        Marketplace(type: .mainPost, mainImage: UIImage(named: "picture5"), priceLabel: "Rs 50,0000 Carolla"),
-        Marketplace(type: .mainPost, mainImage: UIImage(named: "picture1"), priceLabel: "Rs 700,000 Jeep"),
+        Marketplace(type: .mainPost, mainImage: nil, priceLabel: nil),
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        marketplaceControllerTableView.dataSource = self
+        marketplaceControllerTableView.delegate = self
+        
+        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.marketplaceHeaderCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.marketplaceHeaderCellIdentifier)
+        
+        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.sellCategoriesCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.sellCategoriesCellIdentifier)
+        
+        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.tableViewCellWithCollectionViewCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.tableViewCellWithCollectionViewCellIdentifier)
+        
+        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.todayPicksCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.todayPicksCellIdentifier)
+    
     }
     
 }
@@ -52,15 +62,41 @@ extension MarketplaceController: UITableViewDataSource {
             let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.todayPicksCellIdentifier, for: indexPath) as! TodayPicksCell
             return cell
             
-            
         // Collection cell yahna pe add karna ha main wala jo ha wo wala
-//        case .mainPost:
-//            let cell =
-            
-        default:
-            return UITableViewCell()
+        case .mainPost:
+            let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.tableViewCellWithCollectionViewCellIdentifier, for: indexPath)
+            return cell
         }
+        
+    }
+}
+
+extension MarketplaceController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let marketplace = marketPlaces[indexPath.row]
+        
+        switch marketplace.type {
+        case .sellCategories:
+            return 55
+        case .todayPicks:
+            return 100
+        case .mainPost:
+            return 100
+            
+        }
+    
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.marketplaceHeaderCellIdentifier)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 55
+    }
     
 }

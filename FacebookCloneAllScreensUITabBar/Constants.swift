@@ -56,7 +56,7 @@ struct K {
             static let marketplaceHeaderCellIdentifier = "marketplaceHeaderReuseableCell"
             static let pictureLabelCollectionViewCellIdentifier = "pictureLabelCollectionViewReuseableCell"
             static let sellCategoriesCellIdentifier = "sellCategoriesReuseableCell"
-            static let tableViewCellWithCollectionViewCellIdentifier = "TableViewCellWith CollectionViewReuseableCell"
+            static let tableViewCellWithCollectionViewCellIdentifier = "TableViewCellWithCollectionViewReuseableCell"
             static let todayPicksCellIdentifier = "todayPicksReuseableCell"
         }
         
@@ -64,7 +64,7 @@ struct K {
             static let marketplaceHeaderCellNibName = "MarketplaceHeaderCell"
             static let pictureLabelCollectionViewCellNibName = "PictureLabelCollectionViewCell"
             static let sellCategoriesCellNibName = "SellCategoriesCell"
-            static let tableViewCellWithCollectionViewCellNibName = "TableViewCellWithCollectionViewCell"
+            static let tableViewCellWithCollectionViewCellNibName = "TableViewCellWithCollectionView"
             static let todayPicksCellNibName = "TodayPicksCell"
         }
     }
