@@ -55,17 +55,11 @@ struct K {
         struct Identifiers {
             static let marketplaceHeaderCollectionCellIdentifier = "marketlaceHeaderReuseableCell"
             static let pictureLabelCollectionViewCellIdentifier = "pictureLabelCollectionViewReuseableCell"
-            static let sellCategoriesCellIdentifier = "sellCategoriesReuseableCell"
-            static let tableViewCellWithCollectionViewCellIdentifier = "TableViewCellWithCollectionViewReuseableCell"
-            static let todayPicksCellIdentifier = "todayPicksReuseableCell"
         }
         
         struct NibNames {
             static let marketplaceHeaderCollectionCellNibName = "MarketlaceHeaderCollectionCell"
             static let pictureLabelCollectionViewCellNibName = "PictureLabelCollectionViewCell"
-            static let sellCategoriesCellNibName = "SellCategoriesCell"
-            static let tableViewCellWithCollectionViewCellNibName = "TableViewCellWithCollectionView"
-            static let todayPicksCellNibName = "TodayPicksCell"
         }
     }
     

@@ -9,7 +9,6 @@ import UIKit
 
 class MarketplaceController: UIViewController {
     
-    
     @IBOutlet weak var marketplaceControllerCollectionView: UICollectionView!
     
     var collectionViewMarketplace = [
