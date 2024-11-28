@@ -205,19 +205,31 @@
                     <view key="view" contentMode="scaleToFill" id="nyz-gU-BaM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qm5-ke-T3g">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LXM-N9-vNg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qm5-ke-T3g" firstAttribute="trailing" secondItem="LXM-N9-vNg" secondAttribute="trailing" id="K14-5u-NSH"/>
+                            <constraint firstItem="Qm5-ke-T3g" firstAttribute="bottom" secondItem="LXM-N9-vNg" secondAttribute="bottom" id="ftJ-3j-OiF"/>
+                            <constraint firstItem="Qm5-ke-T3g" firstAttribute="leading" secondItem="LXM-N9-vNg" secondAttribute="leading" id="mqI-MB-E8V"/>
+                            <constraint firstItem="Qm5-ke-T3g" firstAttribute="top" secondItem="LXM-N9-vNg" secondAttribute="top" id="vDi-zg-VVv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="bell" catalog="system" selectedImage="bell.fill" id="99J-0h-2oA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0D-U5-1ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1807" y="-54"/>
+            <point key="canvasLocation" x="1806.8702290076335" y="-54.225352112676056"/>
         </scene>
-        <!--Notifications-->
+        <!--Tab Bar Controller-->
         <scene sceneID="h79-7w-MU2">
             <objects>
-                <tabBarController title="Notifications" automaticallyAdjustsScrollViewInsets="NO" id="i2F-Tw-wkt" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="i2F-Tw-wkt" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Txt-zS-BSE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -69,4 +69,22 @@ struct K {
         }
     }
     
+    struct NotificationsCell {
+        struct Identifiers {
+            static let earlierHeaderCellIdentifier = "EarlierHeaderReuseableCell"
+            static let newHeaderCellIdentifier = "NewHeaderReuseableCell"
+            static let newTodayEarlierBodyCellIdentifier = "NewTodayEarlierBodyReuseableCell"
+            static let notificationsHeaderCellIdentifier = "NotificationsHeaderReuseableCell"
+            static let TodayHeaderCellIdentifier = "TodayHeaderReuseableCell"
+        }
+        
+        struct NibNames {
+            static let earlierHeaderCellNibName = "EarlierHeaderCell"
+            static let newHeaderCellNibName = "NewHeaderCell"
+            static let newTodayEarlierBodyCellNibName = "NewTodayEarlierBodyCell"
+            static let notificationsHeaderCellNibName = "NotificationsHeaderCell"
+            static let TodayHeaderCellNibName = "TodayHeaderCell"
+        }
+    }
+    
 }

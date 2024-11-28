@@ -9,6 +9,10 @@ import UIKit
 
 class NewTodayEarlierBodyCell: UITableViewCell {
 
+    @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var notificationLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +22,10 @@ class NewTodayEarlierBodyCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func optionsButton(_ sender: UIButton) {
+        
     }
     
 }
