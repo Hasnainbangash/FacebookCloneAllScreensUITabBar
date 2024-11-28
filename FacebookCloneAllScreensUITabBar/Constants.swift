@@ -75,7 +75,7 @@ struct K {
             static let newHeaderCellIdentifier = "NewHeaderReuseableCell"
             static let newTodayEarlierBodyCellIdentifier = "NewTodayEarlierBodyReuseableCell"
             static let notificationsHeaderCellIdentifier = "NotificationsHeaderReuseableCell"
-            static let TodayHeaderCellIdentifier = "TodayHeaderReuseableCell"
+            static let todayHeaderCellIdentifier = "TodayHeaderReuseableCell"
         }
         
         struct NibNames {
@@ -83,7 +83,7 @@ struct K {
             static let newHeaderCellNibName = "NewHeaderCell"
             static let newTodayEarlierBodyCellNibName = "NewTodayEarlierBodyCell"
             static let notificationsHeaderCellNibName = "NotificationsHeaderCell"
-            static let TodayHeaderCellNibName = "TodayHeaderCell"
+            static let todayHeaderCellNibName = "TodayHeaderCell"
         }
     }
     
