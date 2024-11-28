@@ -24,6 +24,12 @@ class NewTodayEarlierBodyCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configureData(mainImage: UIImage, notificationLabel: String, timeLabel: String) {
+        self.mainImage.image = mainImage
+        self.notificationLabel.text = notificationLabel
+        self.timeLabel.text = timeLabel + "h"
+    }
+    
     @IBAction func optionsButton(_ sender: UIButton) {
         
     }

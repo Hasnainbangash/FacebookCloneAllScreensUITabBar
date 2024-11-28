@@ -201,7 +201,7 @@
         <!--Notifications-->
         <scene sceneID="d8V-EQ-ETs">
             <objects>
-                <viewController title="Notifications" id="jHf-rK-pfJ" sceneMemberID="viewController">
+                <viewController title="Notifications" id="jHf-rK-pfJ" customClass="NotificationsController" customModule="FacebookCloneAllScreensUITabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nyz-gU-BaM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,6 +221,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="bell" catalog="system" selectedImage="bell.fill" id="99J-0h-2oA"/>
+                    <connections>
+                        <outlet property="notificationsControllerTableView" destination="Qm5-ke-T3g" id="Zvv-RY-58p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0D-U5-1ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
