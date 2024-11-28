@@ -13,31 +13,31 @@ class NotificationsController: UIViewController {
     
     var newNotifications = [
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "Someone Added content to Story", timeLabel: "1"),
+        Notifications(mainImage: UIImage(named: "picture5")!, notificationLabel: "Someone Added content to Story", timeLabel: "1"),
         
     ]
     
     var todayNotifications = [
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "So many books, so little time.", timeLabel: "2"),
+        Notifications(mainImage: UIImage(named: "picture3")!, notificationLabel: "So many books, so little time.", timeLabel: "2"),
         
         Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "You only live once, but if you do it right, once is enough.", timeLabel: "3"),
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "Nothing is impossible, the word itself says I’m possible.", timeLabel: "5"),
+        Notifications(mainImage: UIImage(named: "picture4")!, notificationLabel: "Nothing is impossible, the word itself says I’m possible.", timeLabel: "5"),
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "Real change, enduring change, happens one step at a time.", timeLabel: "14")
+        Notifications(mainImage: UIImage(named: "picture2")!, notificationLabel: "Real change, enduring change, happens one step at a time.", timeLabel: "14")
     
     ]
     
     var earlierNotifications = [
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "You missed the content", timeLabel: "2"),
+        Notifications(mainImage: UIImage(named: "picture5")!, notificationLabel: "You missed the content", timeLabel: "2"),
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "You only live once, but if you do it right, once is enough.", timeLabel: "3"),
+        Notifications(mainImage: UIImage(named: "picture3")!, notificationLabel: "You only live once, but if you do it right, once is enough.", timeLabel: "3"),
         
         Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "Nothing is impossible, the word itself says I’m possible.", timeLabel: "9"),
         
-        Notifications(mainImage: UIImage(named: "picture1")!, notificationLabel: "Real change, enduring change, happens one step at a time.", timeLabel: "14")
+        Notifications(mainImage: UIImage(named: "picture4")!, notificationLabel: "Real change, enduring change, happens one step at a time.", timeLabel: "14")
         
     ]
     
