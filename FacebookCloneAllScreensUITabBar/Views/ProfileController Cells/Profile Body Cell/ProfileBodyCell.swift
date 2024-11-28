@@ -33,9 +33,9 @@ class ProfileBodyCell: UITableViewCell {
         
         optionsButtonLabel.layer.cornerRadius = optionsButtonLabel.frame.size.height / 5
         
-        profileCoverImageCameraOptionsView.layer.cornerRadius = profileCoverImageCameraOptionsView.frame.size.height / 5
+        profileCoverImageCameraOptionsView.layer.cornerRadius = profileCoverImageCameraOptionsView.frame.size.height / 2
         
-        profileImageCameraOptionsView.layer.cornerRadius = profileImageCameraOptionsView.frame.size.height / 5
+        profileImageCameraOptionsView.layer.cornerRadius = profileImageCameraOptionsView.frame.size.height / 2
 
     }
 

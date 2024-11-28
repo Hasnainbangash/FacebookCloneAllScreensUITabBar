@@ -11,7 +11,7 @@ class PostsPhotosVidoesEventsHeaderCell: UITableViewCell {
 
     @IBOutlet weak var postsButtonLabel: UIButton!
     @IBOutlet weak var photosButtonLabel: UIButton!
-    @IBOutlet weak var vidoesButtonLabel: UIButton!
+    @IBOutlet weak var videosButtonLabel: UIButton!
     @IBOutlet weak var eventsButtonLabel: UIButton!
     
     override func awakeFromNib() {
