@@ -22,6 +22,10 @@ class ProfileHeaderCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configureData(nameLabel: String) {
+        self.nameLabel.text = nameLabel
+    }
+    
     @IBAction func threadsButtonPressed(_ sender: UIButton) {
     }
     
