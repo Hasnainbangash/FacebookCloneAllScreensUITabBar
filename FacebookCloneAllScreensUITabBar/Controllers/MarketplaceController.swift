@@ -9,12 +9,19 @@ import UIKit
 
 class MarketplaceController: UIViewController {
     
-    @IBOutlet weak var marketplaceControllerTableView: UITableView!
     
-    var marketPlaces = [
-        Marketplace(type: .sellCategories, mainImage: nil, priceLabel: nil),
-        Marketplace(type: .todayPicks, mainImage: nil, priceLabel: nil),
-        Marketplace(type: .mainPost, mainImage: nil, priceLabel: nil),
+    @IBOutlet weak var marketplaceControllerCollectionView: UICollectionView!
+    
+    var collectionViewMarketplace = [
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 10,000 Toyota"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture3")!, priceLabel: "Rs 50,000 Carolla"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 700,000 Ford"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture2")!, priceLabel: "Rs 10,000 Honda"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture4")!, priceLabel: "Rs 50,0000 BMW"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture1")!, priceLabel: "Rs 470,000 Mercedes"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture5")!, priceLabel: "Rs 20,000 Lexus"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture4")!, priceLabel: "Rs 50,000 Suzuki"),
+        CollectionViewMarketPlace(mainImage: UIImage(named: "picture2")!, priceLabel: "Rs 170,000 Bently")
     ]
     
     override func viewDidLoad() {
@@ -22,80 +29,69 @@ class MarketplaceController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        marketplaceControllerTableView.dataSource = self
-        marketplaceControllerTableView.delegate = self
-        
-        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.marketplaceHeaderCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.marketplaceHeaderCellIdentifier)
-        
-        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.sellCategoriesCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.sellCategoriesCellIdentifier)
-        
-        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.tableViewCellWithCollectionViewCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.tableViewCellWithCollectionViewCellIdentifier)
-        
-        marketplaceControllerTableView.register(UINib(nibName: K.MarketplaceCell.NibNames.todayPicksCellNibName, bundle: nil), forCellReuseIdentifier: K.MarketplaceCell.Identifiers.todayPicksCellIdentifier)
+        marketplaceControllerCollectionView.dataSource = self
+        marketplaceControllerCollectionView.delegate = self
     
+        
+        marketplaceControllerCollectionView.register(
+            UINib(nibName: K.MarketplaceCell.NibNames.marketplaceHeaderCollectionCellNibName, bundle: nil),
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: K.MarketplaceCell.Identifiers.marketplaceHeaderCollectionCellIdentifier
+        )
+
+        
+        marketplaceControllerCollectionView.register(UINib(nibName: K.MarketplaceCell.NibNames.pictureLabelCollectionViewCellNibName, bundle: nil), forCellWithReuseIdentifier: K.MarketplaceCell.Identifiers.pictureLabelCollectionViewCellIdentifier)
+        
     }
     
 }
 
-extension MarketplaceController: UITableViewDataSource {
+extension MarketplaceController: UICollectionViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionViewMarketplace.count
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return marketPlaces.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let marketplace = marketPlaces[indexPath.row]
+        let marketplace = collectionViewMarketplace[indexPath.row]
         
-        switch marketplace.type {
-        case .sellCategories:
-            
-            let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.sellCategoriesCellIdentifier, for: indexPath) as! SellCategoriesCell
-            return cell
-            
-        case .todayPicks:
-            
-            let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.todayPicksCellIdentifier, for: indexPath) as! TodayPicksCell
-            return cell
-            
-        // Collection cell yahna pe add karna ha main wala jo ha wo wala
-        case .mainPost:
-            let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.tableViewCellWithCollectionViewCellIdentifier, for: indexPath)
-            return cell
-        }
+        let cell = marketplaceControllerCollectionView.dequeueReusableCell(withReuseIdentifier: K.MarketplaceCell.Identifiers.pictureLabelCollectionViewCellIdentifier, for: indexPath) as! PictureLabelCollectionViewCell
         
-    }
-}
-
-extension MarketplaceController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        cell.configureData(mainImage: marketplace.mainImage, priceLabel: marketplace.priceLabel)
         
-        let marketplace = marketPlaces[indexPath.row]
-        
-        switch marketplace.type {
-        case .sellCategories:
-            return 55
-        case .todayPicks:
-            return 50
-        case .mainPost:
-            return marketplaceControllerTableView.frame.height - 105
-        }
-    
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let cell = marketplaceControllerTableView.dequeueReusableCell(withIdentifier: K.MarketplaceCell.Identifiers.marketplaceHeaderCellIdentifier)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: K.MarketplaceCell.Identifiers.marketplaceHeaderCollectionCellIdentifier, for: indexPath) as! MarketlaceHeaderCollectionCell
+            
+            return headerView
+            
+        }
+        fatalError("Unexpected Error")
+    }
+}
+
+extension MarketplaceController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemPerRow: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 2
+        let padding: CGFloat = 10
+        let totalPadding = padding * (itemPerRow - 1)
+        let availableWidth = marketplaceControllerCollectionView.frame.width - totalPadding
+        let itemWidth = availableWidth / itemPerRow
+
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+            return CGSize(width: collectionView.frame.width, height: 120)
+        }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
     }
     
 }

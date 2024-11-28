@@ -157,30 +157,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IUH-Lg-xMe">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wqk-zq-8nH">
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYS-50-6cM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marketplace" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ess-BX-3vf">
+                                                <rect key="frame" x="8" y="8" width="135" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vz-aG-GHJ">
+                                                <rect key="frame" x="333" y="14" width="52" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Gy-aF-T0m">
+                                                <rect key="frame" x="151" y="8" width="174" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-dU-80Y">
+                                                <rect key="frame" x="273" y="14" width="52" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Pf-8p-z2h">
+                                        <rect key="frame" x="0.0" y="65" width="393" height="645"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="645" id="k3U-yc-upW"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9aA-YL-REs">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XQm-Kp-eIM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="leading" secondItem="XQm-Kp-eIM" secondAttribute="leading" id="4Kn-Mh-N4Y"/>
-                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="top" secondItem="XQm-Kp-eIM" secondAttribute="top" id="EgB-pB-X69"/>
-                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="trailing" secondItem="XQm-Kp-eIM" secondAttribute="trailing" id="Tfl-ll-wzM"/>
-                            <constraint firstItem="IUH-Lg-xMe" firstAttribute="bottom" secondItem="XQm-Kp-eIM" secondAttribute="bottom" id="Yu5-cU-N33"/>
+                            <constraint firstItem="wqk-zq-8nH" firstAttribute="leading" secondItem="XQm-Kp-eIM" secondAttribute="leading" id="A22-jh-SVN"/>
+                            <constraint firstItem="wqk-zq-8nH" firstAttribute="top" secondItem="XQm-Kp-eIM" secondAttribute="top" id="Dnr-9G-EmR"/>
+                            <constraint firstItem="wqk-zq-8nH" firstAttribute="bottom" secondItem="XQm-Kp-eIM" secondAttribute="bottom" id="MZw-52-74M"/>
+                            <constraint firstItem="wqk-zq-8nH" firstAttribute="trailing" secondItem="XQm-Kp-eIM" secondAttribute="trailing" id="S6Q-mS-sby"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="storefront" catalog="system" id="kGx-ck-a4H">
                         <imageReference key="selectedImage" image="storefront.fill" catalog="system" variableValue="1"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="marketplaceControllerTableView" destination="IUH-Lg-xMe" id="buD-R0-qBU"/>
+                        <outlet property="marketplaceControllerCollectionView" destination="0Pf-8p-z2h" id="l2I-vw-utU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXT-Il-Bgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="-54"/>
+            <point key="canvasLocation" x="496.94656488549617" y="-54.225352112676056"/>
         </scene>
         <!--Profile-->
         <scene sceneID="M3p-vu-A6M">
@@ -263,6 +312,7 @@
         <image name="person.2.fill" catalog="system" width="128" height="86"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="storefront" catalog="system" width="128" height="111"/>
         <image name="storefront.fill" catalog="system" width="128" height="116"/>
