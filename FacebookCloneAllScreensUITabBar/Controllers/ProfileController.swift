@@ -84,7 +84,7 @@ extension ProfileController: UITableViewDataSource {
         case 0:
             let cell = profileControllerTableView.dequeueReusableCell(withIdentifier: K.ProfileCell.Identifiers.profileBodyCellIdentifier, for: indexPath) as! ProfileBodyCell
             
-            cell.configureData(profileCoverImage: UIImage(named: "picture5")!, profileImage: UIImage(named: "picture3")!, nameLabel: nil, totalFriendsNumberLabel: nil, profileBioLabel: nil)
+//            cell.configureData(profileCoverImage: UIImage(named: "picture5")!, profileImage: UIImage(named: "picture3")!, nameLabel: nil, totalFriendsNumberLabel: nil, profileBioLabel: nil)
             
             return cell
             
