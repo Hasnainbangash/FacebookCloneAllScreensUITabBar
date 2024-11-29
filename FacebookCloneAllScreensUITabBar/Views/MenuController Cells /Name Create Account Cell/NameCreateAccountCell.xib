@@ -16,13 +16,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="357" height="116"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-kZ-5AH">
-                        <rect key="frame" x="16.666666666666657" y="11.666666666666664" width="303" height="87"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gNa-kZ-5AH">
+                        <rect key="frame" x="16.666666666666657" y="11.666666666666664" width="303" height="80"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D4C-mi-N1G">
                                 <rect key="frame" x="0.0" y="0.0" width="303" height="35"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I47-eN-sac">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture3" translatesAutoresizingMaskIntoConstraints="NO" id="I47-eN-sac">
                                         <rect key="frame" x="0.0" y="0.0" width="36" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Ngj-s8-Wll"/>
@@ -54,7 +54,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lQT-hq-dVc">
-                                <rect key="frame" x="0.0" y="52" width="303" height="35"/>
+                                <rect key="frame" x="0.0" y="45" width="303" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOh-as-k41">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="35"/>
@@ -95,6 +95,7 @@
     </objects>
     <resources>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="picture3" width="200" height="112"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
     </resources>
 </document>

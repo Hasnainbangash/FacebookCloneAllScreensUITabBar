@@ -118,7 +118,7 @@ struct K {
             static let alsoFromMetaBodyCellNibName = "AlsoFromMetaBodyCell"
             static let alsoFromMetaHeaderCellNibName = "AlsoFromMetaHeaderCell"
             static let helpAndSupportBodyCellNibName = "HelpAndSupportBodyCell"
-            static let helpAndSupportHeaderCellNibName = "HelpAndSupportHeaderCell"
+            static let helpAndSupportHeaderCellNibName = "HelpAndSupportHeader"
             static let logoutCellNibName = "LogoutCell"
             static let nameCreateAccountCellNibName = "NameCreateAccountCell"
             static let settingAndPrivacyBodyCellNibName = "SettingandPrivacyBodyCell"

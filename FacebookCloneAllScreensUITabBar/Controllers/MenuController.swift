@@ -83,9 +83,9 @@ extension MenuController :UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return 200
+            return 100
         case 1:
-            return 200
+            return 400
         case 2:
             return 200
         case 3:
