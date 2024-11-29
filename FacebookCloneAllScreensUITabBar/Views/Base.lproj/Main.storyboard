@@ -350,7 +350,6 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-uH-Dcf">
                                                         <rect key="frame" x="65" y="0.0" width="219" height="34"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="34" id="G1w-tU-gy5"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="219" id="wvY-ng-5qI"/>
@@ -386,7 +385,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="QTE-OL-c2s" firstAttribute="top" secondItem="mTV-5t-cLQ" secondAttribute="top" constant="8" id="5BX-L5-mv8"/>
                                             <constraint firstAttribute="trailing" secondItem="QTE-OL-c2s" secondAttribute="trailing" constant="7.5" id="k9G-ZA-JYp"/>
@@ -414,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcC-N8-p1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2493.8931297709923" y="-54.225352112676056"/>
+            <point key="canvasLocation" x="2483" y="-54"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h79-7w-MU2">
