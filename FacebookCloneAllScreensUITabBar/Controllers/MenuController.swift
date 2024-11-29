@@ -11,6 +11,8 @@ class MenuController: UIViewController {
 
     @IBOutlet weak var menuControllerTableView: UITableView!
     
+    var sectionStatus: [Bool] = [false, false, true, true, true, true]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,9 +38,7 @@ class MenuController: UIViewController {
         menuControllerTableView.register(UINib(nibName: K.MenuCell.NibNames.settingAndPrivacyHeaderCellNibName, bundle: nil), forCellReuseIdentifier: K.MenuCell.Identifiers.settingAndPrivacyHeaderCellIdentifier)
         
         menuControllerTableView.register(UINib(nibName: K.MenuCell.NibNames.videosMemoriesSavedAllCellNibName, bundle: nil), forCellReuseIdentifier: K.MenuCell.Identifiers.videosMemoriesSavedAllCellIdentifier)
-        
     }
-
 }
 
 extension MenuController: UITableViewDataSource {
@@ -48,7 +48,11 @@ extension MenuController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if sectionStatus[section] {
+            return 0
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -108,19 +112,34 @@ extension MenuController :UITableViewDelegate {
             return UITableViewCell()
         case 2:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.helpAndSupportHeaderCellIdentifier) as! HelpAndSupportHeader
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(headerTapped(_:)))
+            cell.addGestureRecognizer(tapGesture)
+            cell.tag = section
             return cell
         case 3:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.settingAndPrivacyHeaderCellIdentifier) as! SettingAndPrivacyCell
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(headerTapped(_:)))
+            cell.addGestureRecognizer(tapGesture)
+            cell.tag = section
             return cell
         case 4:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.alsoFromMetaHeaderCellIdentifier) as! AlsoFromMetaHeaderCell
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(headerTapped(_:)))
+            cell.addGestureRecognizer(tapGesture)
+            cell.tag = section
             return cell
         case 5:
             return UITableViewCell()
         default:
             return UITableViewCell()
         }
-        
+    }
+    
+    @objc func headerTapped(_ sender: UITapGestureRecognizer) {
+        if let section = sender.view?.tag {
+            sectionStatus[section].toggle()
+            menuControllerTableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
