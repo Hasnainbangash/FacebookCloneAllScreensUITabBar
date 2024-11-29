@@ -234,18 +234,30 @@
         <!--Profile-->
         <scene sceneID="M3p-vu-A6M">
             <objects>
-                <viewController title="Profile" id="DlO-8h-KuV" sceneMemberID="viewController">
+                <viewController title="Profile" id="DlO-8h-KuV" customClass="ProfileController" customModule="FacebookCloneAllScreensUITabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mkI-CN-uPm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jr0-BL-p4x">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kEj-2S-pUm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jr0-BL-p4x" firstAttribute="bottom" secondItem="kEj-2S-pUm" secondAttribute="bottom" id="MFD-Md-Io2"/>
+                            <constraint firstItem="Jr0-BL-p4x" firstAttribute="top" secondItem="kEj-2S-pUm" secondAttribute="top" id="MRt-Fs-eSA"/>
+                            <constraint firstItem="Jr0-BL-p4x" firstAttribute="leading" secondItem="kEj-2S-pUm" secondAttribute="leading" id="Sx8-Gg-rje"/>
+                            <constraint firstItem="Jr0-BL-p4x" firstAttribute="trailing" secondItem="kEj-2S-pUm" secondAttribute="trailing" id="pYL-mb-xkm"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="StT-jA-L4b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31b-WI-tQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="-54"/>
+            <point key="canvasLocation" x="1148.854961832061" y="-54.225352112676056"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="d8V-EQ-ETs">

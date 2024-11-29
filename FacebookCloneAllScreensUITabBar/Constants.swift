@@ -63,6 +63,26 @@ struct K {
         }
     }
     
+    struct ProfileCell {
+        struct Identifiers {
+            static let detailsCellIdentifier = "DetailsReuseableCell"
+            static let friendsCellIdentifier = "FriendsReuseableCell"
+            static let postCellIdentifier = "PostReuseableCell"
+            static let postsPhotosVidoesEventsHeaderCellIdentifier = "PostsPhotosVidoesEventsHeaderReuseableCell"
+            static let profileBodyCellIdentifier = "ProfileBodyReuseableCell"
+            static let profileHeaderCellIdentifier = "ProfileHeaderReuseableCell"
+        }
+        
+        struct NibNames {
+            static let detailsCellNibName = "DetailsCell"
+            static let friendsCellNibName = "FriendsCell"
+            static let postCellNibName = "PostCell"
+            static let postsPhotosVidoesEventsHeaderCellNibName = "PostsPhotosVidoesEventsHeaderCell"
+            static let profileBodyCellNibName = "ProfileBodyCell"
+            static let profileHeaderCellNibName = "ProfileHeaderCell"
+        }
+    }
+    
     struct NotificationsCell {
         struct Identifiers {
             static let earlierHeaderCellIdentifier = "EarlierHeaderReuseableCell"

@@ -10,6 +10,7 @@ import UIKit
 class FriendsCell: UITableViewCell {
 
     @IBOutlet weak var totalFriendsNumber: UILabel!
+    
     @IBOutlet weak var firstProfileImage: UIImageView!
     @IBOutlet weak var secondProfileImage: UIImageView!
     @IBOutlet weak var thirdProfileImage: UIImageView!
@@ -29,6 +30,13 @@ class FriendsCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        firstProfileImage.layer.cornerRadius = firstProfileImage.frame.size.height / 5
+        secondProfileImage.layer.cornerRadius = secondProfileImage.frame.size.height / 5
+        thirdProfileImage.layer.cornerRadius = thirdProfileImage.frame.size.height / 5
+        fourthProfileImage.layer.cornerRadius = fourthProfileImage.frame.size.height / 5
+        fifthProfileImage.layer.cornerRadius = fifthProfileImage.frame.size.height / 5
+        sixthProfileImage.layer.cornerRadius = sixthProfileImage.frame.size.height / 5
         
         seeAllFriendsButtonLabel.layer.cornerRadius = seeAllFriendsButtonLabel.frame.size.height / 5
         
