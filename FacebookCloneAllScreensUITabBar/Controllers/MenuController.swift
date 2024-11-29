@@ -44,7 +44,7 @@ class MenuController: UIViewController {
 extension MenuController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,13 +87,13 @@ extension MenuController :UITableViewDelegate {
         case 1:
             return 400
         case 2:
-            return 200
+            return 350
         case 3:
-            return 200
+            return 350
         case 4:
-            return 200
+            return 230
         case 5:
-            return 100
+            return 60
         default:
             return 100
         }
@@ -126,17 +126,17 @@ extension MenuController :UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return 20
+            return 10
         case 1:
-            return 20
+            return 10
         case 2:
-            return 200
+            return 60
         case 3:
-            return 200
+            return 60
         case 4:
-            return 200
+            return 60
         case 5:
-            return 20
+            return 10
         default:
             return 100
         }
