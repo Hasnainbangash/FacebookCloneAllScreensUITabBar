@@ -324,7 +324,7 @@
         <!--Menu-->
         <scene sceneID="9lo-jF-bVX">
             <objects>
-                <viewController title="Menu" id="Abv-NQ-dgb" sceneMemberID="viewController">
+                <viewController title="Menu" id="Abv-NQ-dgb" customClass="MenuController" customModule="FacebookCloneAllScreensUITabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="leN-UP-43z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,6 +409,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="line.3.horizontal" catalog="system" selectedImage="line.3.horizontal" id="J0l-Sv-JJY"/>
+                    <connections>
+                        <outlet property="menuControllerTableView" destination="6Zf-pq-ArR" id="0Gt-5E-AwN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcC-N8-p1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

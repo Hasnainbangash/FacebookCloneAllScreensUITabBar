@@ -101,4 +101,30 @@ struct K {
         }
     }
     
+    struct MenuCell {
+        struct Identifiers {
+            static let alsoFromMetaBodyCellIdentifier = "AlsoFromMetaBodyReuseableCell"
+            static let alsoFromMetaHeaderCellIdentifier = "AlsoFromMetaHeaderReuseableCell"
+            static let helpAndSupportBodyCellIdentifier = "HelpAndSupportBodyReuseableCell"
+            static let helpAndSupportHeaderCellIdentifier = "HelpAndSupportHeaderReuseableCell"
+            static let logoutCellCellIdentifier = "LogoutCellReuseableCell"
+            static let nameCreateAccountCellIdentifier = "NameCreateAccountReuseableCell"
+            static let settingAndPrivacyBodyCellIdentifier = "SettingAndPrivacyBodyReuseableCell"
+            static let settingAndPrivacyHeaderCellIdentifier = "SettingAndPrivacyHeaderReuseableCell"
+            static let videosMemoriesSavedAllCellIdentifier = "VideosMemoriesSavedAllReuseableCell"
+        }
+        
+        struct NibNames {
+            static let alsoFromMetaBodyCellNibName = "AlsoFromMetaBodyCell"
+            static let alsoFromMetaHeaderCellNibName = "AlsoFromMetaHeaderCell"
+            static let helpAndSupportBodyCellNibName = "HelpAndSupportBodyCell"
+            static let helpAndSupportHeaderCellNibName = "HelpAndSupportHeaderCell"
+            static let logoutCellNibName = "LogoutCell"
+            static let nameCreateAccountCellNibName = "NameCreateAccountCell"
+            static let settingAndPrivacyBodyCellNibName = "SettingandPrivacyBodyCell"
+            static let settingAndPrivacyHeaderCellNibName = "SettingAndPrivacyCell"
+            static let videosMemoriesSavedAllCellNibName = "VideosMemoriesSavedAllCell"
+        }
+    }
+    
 }

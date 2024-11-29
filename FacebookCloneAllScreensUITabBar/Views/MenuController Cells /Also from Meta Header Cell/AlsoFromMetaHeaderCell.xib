@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlsoFromMetaHeaderReuseableCell" rowHeight="60" id="74T-HA-fZM" customClass="AlsoFromMetaHeaderCell" customModule="FacebookCloneAllScreensUITabBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="74T-HA-fZM" id="am5-kD-HS1">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bV6-oh-pBI">
+                        <rect key="frame" x="16.666666666666657" y="11.666666666666664" width="288" height="36"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnZ-ds-6HX">
+                                <rect key="frame" x="0.0" y="0.0" width="38" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="GuU-Og-GHf"/>
+                                    <constraint firstAttribute="width" constant="38" id="tQ5-PF-dcO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="square.grid.3x3.fill" catalog="system">
+                                    <color key="baseForegroundColor" red="0.72156862749999995" green="0.80000000000000004" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Also from Meta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-NE-YUF">
+                                <rect key="frame" x="46" y="0.0" width="206" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="00w-K4-yNy"/>
+                                    <constraint firstAttribute="height" constant="36" id="HBF-pT-76m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt0-ad-jPX">
+                                <rect key="frame" x="260" y="1" width="28" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="KYY-2m-5pO"/>
+                                    <constraint firstAttribute="height" constant="35" id="tze-la-XqZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bV6-oh-pBI" secondAttribute="bottom" constant="11.5" id="3l5-gO-jJa"/>
+                    <constraint firstItem="bV6-oh-pBI" firstAttribute="top" secondItem="am5-kD-HS1" secondAttribute="top" constant="11.5" id="INp-5b-0o5"/>
+                    <constraint firstAttribute="trailing" secondItem="bV6-oh-pBI" secondAttribute="trailing" constant="16.5" id="lCk-Lf-Zgw"/>
+                    <constraint firstItem="bV6-oh-pBI" firstAttribute="leading" secondItem="am5-kD-HS1" secondAttribute="leading" constant="16.5" id="m9a-DK-ldM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="s7P-ux-xrW"/>
+            <point key="canvasLocation" x="-15.267175572519083" y="25.35211267605634"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="square.grid.3x3.fill" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
