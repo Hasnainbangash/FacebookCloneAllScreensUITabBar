@@ -91,7 +91,7 @@
                 <outlet property="eventsButtonLabel" destination="dvR-fa-c7z" id="fWG-Na-9CX"/>
                 <outlet property="photosButtonLabel" destination="mSJ-No-nYE" id="SNG-e1-p6p"/>
                 <outlet property="postsButtonLabel" destination="wBI-mx-4HV" id="HBk-Mk-SP3"/>
-                <outlet property="vidoesButtonLabel" destination="JY9-gf-NpY" id="usy-FI-xAV"/>
+                <outlet property="videosButtonLabel" destination="JY9-gf-NpY" id="NdR-Vg-DqS"/>
             </connections>
             <point key="canvasLocation" x="93.129770992366403" y="27.464788732394368"/>
         </tableViewCell>

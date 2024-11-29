@@ -211,7 +211,7 @@
                 <outlet property="liveView" destination="fzc-Cx-TPE" id="N1l-xC-inG"/>
                 <outlet property="manageButtonLabel" destination="Oti-UE-fZj" id="8XO-OU-hlO"/>
                 <outlet property="profileImage" destination="za8-96-IAo" id="fvQ-39-MJO"/>
-                <outlet property="reelsView" destination="eIy-ri-36O" id="1v5-Kw-bTI"/>
+                <outlet property="reelView" destination="eIy-ri-36O" id="Bal-dG-m92"/>
             </connections>
             <point key="canvasLocation" x="-12.213740458015266" y="74.647887323943664"/>
         </tableViewCell>

@@ -26,7 +26,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xb1-iV-aI1">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="235"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-re-dor">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture3" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-re-dor">
                                                 <rect key="frame" x="0.0" y="0.0" width="365" height="235"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="365" id="Dn2-MQ-5ey"/>
@@ -80,7 +80,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="-28" translatesAutoresizingMaskIntoConstraints="NO" id="guD-VY-yuA">
                                         <rect key="frame" x="0.0" y="0.0" width="126" height="124"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eyX-Xd-dlO">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture2" translatesAutoresizingMaskIntoConstraints="NO" id="eyX-Xd-dlO">
                                                 <rect key="frame" x="0.0" y="5" width="118" height="119"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="118" id="IyS-kR-hE0"/>
@@ -244,6 +244,8 @@
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="picture2" width="213.33332824707031" height="120"/>
+        <image name="picture3" width="200" height="112"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

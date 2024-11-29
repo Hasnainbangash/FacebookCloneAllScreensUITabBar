@@ -254,6 +254,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="StT-jA-L4b"/>
+                    <connections>
+                        <outlet property="profileControllerTableView" destination="Jr0-BL-p4x" id="4P1-SZ-pAN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31b-WI-tQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -45,7 +45,7 @@ class ProfileBodyCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureData(profileCoverImage: UIImage, profileImage: UIImage, nameLabel: String, totalFriendsNumberLabel: String, profileBioLabel: String) {
+    func configureData(profileCoverImage: UIImage, profileImage: UIImage, nameLabel: String?, totalFriendsNumberLabel: String?, profileBioLabel: String?) {
         
         self.profileCoverImage.image = profileCoverImage
         self.profileImage.image = profileImage
