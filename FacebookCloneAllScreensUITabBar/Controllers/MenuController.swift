@@ -41,7 +41,6 @@ class MenuController: UIViewController {
         menuControllerTableView.register(UINib(nibName: K.MenuCell.NibNames.settingAndPrivacyHeaderCellNibName, bundle: nil), forCellReuseIdentifier: K.MenuCell.Identifiers.settingAndPrivacyHeaderCellIdentifier)
         
         menuControllerTableView.register(UINib(nibName: K.MenuCell.NibNames.videosMemoriesSavedAllCellNibName, bundle: nil), forCellReuseIdentifier: K.MenuCell.Identifiers.videosMemoriesSavedAllCellIdentifier)
-        
     }
 
 }
