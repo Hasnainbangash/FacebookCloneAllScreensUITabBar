@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-RE-gHX">
-                        <rect key="frame" x="16.666666666666657" y="11.666666666666657" width="239.99999999999997" height="335"/>
+                        <rect key="frame" x="16.666666666666657" y="11.666666666666657" width="239.99999999999997" height="345.33333333333337"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nen-Hg-Fgv">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
@@ -48,12 +48,24 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0e-w5-5Sd">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="KaA-xL-6tM" eventType="touchUpInside" id="9Ag-fh-qEQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="58G-1U-bj0"/>
+                                    <constraint firstItem="g0e-w5-5Sd" firstAttribute="top" secondItem="Nen-Hg-Fgv" secondAttribute="top" id="Bbh-4h-BBw"/>
                                     <constraint firstAttribute="bottom" secondItem="D5f-hK-Bk3" secondAttribute="bottom" constant="9" id="QIO-RU-c1W"/>
+                                    <constraint firstItem="g0e-w5-5Sd" firstAttribute="leading" secondItem="Nen-Hg-Fgv" secondAttribute="leading" id="QVp-Ez-Ksr"/>
+                                    <constraint firstAttribute="trailing" secondItem="g0e-w5-5Sd" secondAttribute="trailing" id="VpE-pG-l1P"/>
                                     <constraint firstItem="D5f-hK-Bk3" firstAttribute="leading" secondItem="Nen-Hg-Fgv" secondAttribute="leading" constant="8" id="Ywo-ZM-am3"/>
                                     <constraint firstItem="D5f-hK-Bk3" firstAttribute="top" secondItem="Nen-Hg-Fgv" secondAttribute="top" constant="9" id="bAr-Id-Cda"/>
+                                    <constraint firstAttribute="bottom" secondItem="g0e-w5-5Sd" secondAttribute="bottom" id="cni-5C-uR7"/>
                                     <constraint firstAttribute="trailing" secondItem="D5f-hK-Bk3" secondAttribute="trailing" constant="8" id="gHH-Jk-8KP"/>
                                     <constraint firstAttribute="width" constant="240" id="hox-Vy-y2a"/>
                                 </constraints>
@@ -87,14 +99,26 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggm-uO-zGd">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="KaA-xL-6tM" eventType="touchUpInside" id="FWE-ug-5JT"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="ggm-uO-zGd" firstAttribute="top" secondItem="EJ1-Qm-eNi" secondAttribute="top" id="0yF-OF-rvh"/>
+                                    <constraint firstAttribute="bottom" secondItem="ggm-uO-zGd" secondAttribute="bottom" id="EmR-FB-BGY"/>
                                     <constraint firstAttribute="bottom" secondItem="Gc1-TT-j2q" secondAttribute="bottom" constant="9" id="Grf-xo-nxZ"/>
                                     <constraint firstAttribute="height" constant="42" id="LhT-PH-WdY"/>
+                                    <constraint firstAttribute="trailing" secondItem="ggm-uO-zGd" secondAttribute="trailing" id="N7b-lD-Hzy"/>
                                     <constraint firstAttribute="trailing" secondItem="Gc1-TT-j2q" secondAttribute="trailing" constant="8" id="SwR-gQ-fD0"/>
                                     <constraint firstItem="Gc1-TT-j2q" firstAttribute="top" secondItem="EJ1-Qm-eNi" secondAttribute="top" constant="9" id="aW7-5t-DA0"/>
                                     <constraint firstItem="Gc1-TT-j2q" firstAttribute="leading" secondItem="EJ1-Qm-eNi" secondAttribute="leading" constant="8" id="p0V-aa-ZJY"/>
                                     <constraint firstAttribute="width" constant="240" id="vNI-sq-upL"/>
+                                    <constraint firstItem="ggm-uO-zGd" firstAttribute="leading" secondItem="EJ1-Qm-eNi" secondAttribute="leading" id="vXW-Bt-q6B"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jL-Er-Yey">
@@ -126,12 +150,24 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7x-8u-SHi">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="KaA-xL-6tM" eventType="touchUpInside" id="wsg-Fs-zoN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="0Bz-CN-J0X"/>
                                     <constraint firstItem="0Iz-Mz-t5Z" firstAttribute="leading" secondItem="2jL-Er-Yey" secondAttribute="leading" constant="8" id="BU5-3i-YCF"/>
+                                    <constraint firstItem="n7x-8u-SHi" firstAttribute="leading" secondItem="2jL-Er-Yey" secondAttribute="leading" id="BVM-U7-jIk"/>
+                                    <constraint firstAttribute="trailing" secondItem="n7x-8u-SHi" secondAttribute="trailing" id="Hyg-Gc-zDW"/>
+                                    <constraint firstItem="n7x-8u-SHi" firstAttribute="top" secondItem="2jL-Er-Yey" secondAttribute="top" id="NWs-IL-Hdg"/>
                                     <constraint firstItem="0Iz-Mz-t5Z" firstAttribute="top" secondItem="2jL-Er-Yey" secondAttribute="top" constant="9" id="RaI-5J-p7T"/>
                                     <constraint firstAttribute="width" constant="240" id="Y4m-7e-UoX"/>
+                                    <constraint firstAttribute="bottom" secondItem="n7x-8u-SHi" secondAttribute="bottom" id="fLe-CU-P4t"/>
                                     <constraint firstAttribute="bottom" secondItem="0Iz-Mz-t5Z" secondAttribute="bottom" constant="9" id="pPB-Gg-p9O"/>
                                     <constraint firstAttribute="trailing" secondItem="0Iz-Mz-t5Z" secondAttribute="trailing" constant="8" id="yCb-tM-MaX"/>
                                 </constraints>
@@ -165,13 +201,25 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttz-Nc-SoX">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="KaA-xL-6tM" eventType="touchUpInside" id="VjO-gI-8NS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="b12-Rm-ImJ" secondAttribute="bottom" constant="9" id="5gD-tC-Sgi"/>
+                                    <constraint firstAttribute="trailing" secondItem="ttz-Nc-SoX" secondAttribute="trailing" id="9ii-O1-mur"/>
+                                    <constraint firstItem="ttz-Nc-SoX" firstAttribute="leading" secondItem="8MX-1k-wlv" secondAttribute="leading" id="BL2-Il-Aux"/>
                                     <constraint firstAttribute="height" constant="42" id="FN6-Au-r13"/>
+                                    <constraint firstAttribute="bottom" secondItem="ttz-Nc-SoX" secondAttribute="bottom" id="HI2-Oq-1DG"/>
                                     <constraint firstAttribute="trailing" secondItem="b12-Rm-ImJ" secondAttribute="trailing" constant="8" id="JCV-b7-UmX"/>
                                     <constraint firstItem="b12-Rm-ImJ" firstAttribute="leading" secondItem="8MX-1k-wlv" secondAttribute="leading" constant="8" id="PZy-hw-oRU"/>
                                     <constraint firstItem="b12-Rm-ImJ" firstAttribute="top" secondItem="8MX-1k-wlv" secondAttribute="top" constant="9" id="VBc-wc-CRr"/>
+                                    <constraint firstItem="ttz-Nc-SoX" firstAttribute="top" secondItem="8MX-1k-wlv" secondAttribute="top" id="lBE-tc-egX"/>
                                     <constraint firstAttribute="width" constant="240" id="p13-Xo-lyR"/>
                                 </constraints>
                             </view>
@@ -204,24 +252,36 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og3-DL-fj3">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="KaA-xL-6tM" eventType="touchUpInside" id="bs3-Q0-3VS"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Og3-DL-fj3" firstAttribute="leading" secondItem="a49-nR-eae" secondAttribute="leading" id="6j4-v6-uXi"/>
                                     <constraint firstAttribute="trailing" secondItem="0oH-B9-RBg" secondAttribute="trailing" constant="8" id="E3A-S8-yPJ"/>
                                     <constraint firstItem="0oH-B9-RBg" firstAttribute="top" secondItem="a49-nR-eae" secondAttribute="top" constant="9" id="Exv-Pk-oBy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Og3-DL-fj3" secondAttribute="trailing" id="ImT-Cu-NUR"/>
                                     <constraint firstItem="0oH-B9-RBg" firstAttribute="leading" secondItem="a49-nR-eae" secondAttribute="leading" constant="8" id="RVU-ER-9tb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Og3-DL-fj3" secondAttribute="bottom" id="XDX-I3-kel"/>
                                     <constraint firstAttribute="height" constant="42" id="Xue-Nx-D1Z"/>
                                     <constraint firstAttribute="width" constant="240" id="ouI-kZ-R34"/>
+                                    <constraint firstItem="Og3-DL-fj3" firstAttribute="top" secondItem="a49-nR-eae" secondAttribute="top" id="rWc-HL-xhd"/>
                                     <constraint firstAttribute="bottom" secondItem="0oH-B9-RBg" secondAttribute="bottom" constant="9" id="zht-Si-Kcv"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DrF-Wn-no7">
-                                <rect key="frame" x="0.0" y="285" width="240" height="50"/>
+                                <rect key="frame" x="0.0" y="285" width="240" height="60.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mxz-MQ-sAf">
-                                        <rect key="frame" x="8" y="9" width="224" height="32"/>
+                                        <rect key="frame" x="8" y="9" width="224" height="42.333333333333336"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aul-GY-663">
-                                                <rect key="frame" x="0.0" y="4" width="24" height="24"/>
+                                                <rect key="frame" x="0.0" y="9" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="Imx-qt-Lql"/>
                                                     <constraint firstAttribute="width" constant="24" id="WcP-7U-aEi"/>
@@ -232,7 +292,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Policies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD6-FT-oYm">
-                                                <rect key="frame" x="37" y="5.3333333333333144" width="187" height="21"/>
+                                                <rect key="frame" x="37" y="10.666666666666629" width="187" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="187" id="BDL-OS-4vY"/>
                                                     <constraint firstAttribute="height" constant="21" id="pVw-yA-TKc"/>
@@ -243,13 +303,25 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QP-Rg-Rdc">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="60.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="KaA-xL-6tM" eventType="touchUpInside" id="sxZ-7v-Oo6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8QP-Rg-Rdc" secondAttribute="bottom" id="6iu-hK-Iz5"/>
                                     <constraint firstItem="Mxz-MQ-sAf" firstAttribute="leading" secondItem="DrF-Wn-no7" secondAttribute="leading" constant="8" id="c8u-cI-0LT"/>
                                     <constraint firstAttribute="width" constant="240" id="kez-A3-ZgU"/>
+                                    <constraint firstItem="8QP-Rg-Rdc" firstAttribute="top" secondItem="DrF-Wn-no7" secondAttribute="top" id="m7Z-Du-Uj4"/>
                                     <constraint firstAttribute="bottom" secondItem="Mxz-MQ-sAf" secondAttribute="bottom" constant="9" id="o4y-6D-PXF"/>
+                                    <constraint firstItem="8QP-Rg-Rdc" firstAttribute="leading" secondItem="DrF-Wn-no7" secondAttribute="leading" id="qg1-L7-ip4"/>
                                     <constraint firstAttribute="height" constant="42" id="r7s-Xc-A8b"/>
                                     <constraint firstItem="Mxz-MQ-sAf" firstAttribute="top" secondItem="DrF-Wn-no7" secondAttribute="top" constant="9" id="uSd-qW-7B8"/>
+                                    <constraint firstAttribute="trailing" secondItem="8QP-Rg-Rdc" secondAttribute="trailing" id="xAj-OQ-U7S"/>
                                     <constraint firstAttribute="trailing" secondItem="Mxz-MQ-sAf" secondAttribute="trailing" constant="8" id="zLj-Ly-YuD"/>
                                 </constraints>
                             </view>
@@ -264,6 +336,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="xQO-dA-EHL"/>
+            <connections>
+                <outlet property="accountStatusButton" destination="ggm-uO-zGd" id="yHy-Xs-WqE"/>
+                <outlet property="helpcenterButton" destination="g0e-w5-5Sd" id="ecP-t0-qxi"/>
+                <outlet property="reportaProblemButton" destination="ttz-Nc-SoX" id="rdq-oa-V8T"/>
+                <outlet property="safetyButton" destination="Og3-DL-fj3" id="JiT-if-iCi"/>
+                <outlet property="supportInboxButon" destination="n7x-8u-SHi" id="Bz0-tQ-Mu6"/>
+                <outlet property="termAndPoliciesButton" destination="8QP-Rg-Rdc" id="eGg-pF-RAD"/>
+            </connections>
             <point key="canvasLocation" x="-51.145038167938928" y="138.02816901408451"/>
         </tableViewCell>
     </objects>

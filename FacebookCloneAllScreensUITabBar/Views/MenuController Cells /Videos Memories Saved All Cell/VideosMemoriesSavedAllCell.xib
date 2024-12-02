@@ -46,12 +46,26 @@
                                                     <color key="baseForegroundColor" red="0.19215686274509802" green="0.67450980392156867" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZz-s4-iki">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="88"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="icK-a4-tFW"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="2Ic-wq-ZDu"/>
                                             <constraint firstItem="Ckz-Wq-6BC" firstAttribute="top" secondItem="DDF-AX-ufN" secondAttribute="bottom" constant="8" symbolic="YES" id="5e2-hD-PNr"/>
+                                            <constraint firstAttribute="trailing" secondItem="vZz-s4-iki" secondAttribute="trailing" id="5yx-vV-mYs"/>
+                                            <constraint firstItem="vZz-s4-iki" firstAttribute="leading" secondItem="qfb-C4-0IY" secondAttribute="leading" id="NZa-5f-Vwm"/>
                                             <constraint firstItem="Ckz-Wq-6BC" firstAttribute="leading" secondItem="qfb-C4-0IY" secondAttribute="leadingMargin" id="R9O-fm-Ykg"/>
+                                            <constraint firstAttribute="width" constant="129" id="Uc1-Sh-azI"/>
                                             <constraint firstAttribute="bottom" secondItem="Ckz-Wq-6BC" secondAttribute="bottom" constant="21" id="eRb-4Z-Lsn"/>
                                             <constraint firstItem="Ckz-Wq-6BC" firstAttribute="leading" secondItem="DDF-AX-ufN" secondAttribute="leading" id="hxR-cW-9Wk"/>
+                                            <constraint firstItem="vZz-s4-iki" firstAttribute="top" secondItem="qfb-C4-0IY" secondAttribute="top" id="qXw-WA-Ivn"/>
+                                            <constraint firstAttribute="bottom" secondItem="vZz-s4-iki" secondAttribute="bottom" id="vxW-M9-KWG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMk-Vb-Gwi">
@@ -78,18 +92,33 @@
                                                     <color key="baseForegroundColor" red="0.094117647058823528" green="0.42352941176470588" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW7-tA-Z21">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="88"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="129" id="ItI-7H-A2B"/>
+                                                    <constraint firstAttribute="height" constant="88" id="Jd2-Ky-9Z6"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zei-DS-2oj"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="KhL-YV-Np2" firstAttribute="leading" secondItem="GMk-Vb-Gwi" secondAttribute="leadingMargin" id="0Lg-S5-3Fp"/>
                                             <constraint firstItem="KhL-YV-Np2" firstAttribute="top" secondItem="88u-EY-BZY" secondAttribute="bottom" constant="8" symbolic="YES" id="DPA-dA-shY"/>
+                                            <constraint firstAttribute="width" constant="129" id="Lry-f4-7Cf"/>
+                                            <constraint firstAttribute="height" constant="88" id="UeA-8E-oVq"/>
                                             <constraint firstItem="KhL-YV-Np2" firstAttribute="leading" secondItem="88u-EY-BZY" secondAttribute="leading" id="Z4J-BF-9DX"/>
+                                            <constraint firstItem="yW7-tA-Z21" firstAttribute="top" secondItem="GMk-Vb-Gwi" secondAttribute="top" id="ZHD-Sd-dqp"/>
+                                            <constraint firstItem="yW7-tA-Z21" firstAttribute="leading" secondItem="GMk-Vb-Gwi" secondAttribute="leading" id="eco-3E-SJu"/>
+                                            <constraint firstAttribute="trailing" secondItem="yW7-tA-Z21" secondAttribute="trailing" id="ieG-jj-jKX"/>
+                                            <constraint firstAttribute="bottom" secondItem="yW7-tA-Z21" secondAttribute="bottom" id="qHv-jC-W7c"/>
                                             <constraint firstAttribute="bottom" secondItem="KhL-YV-Np2" secondAttribute="bottom" constant="21" id="tdg-pK-Z8c"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="GMk-Vb-Gwi" firstAttribute="leading" secondItem="DgP-CX-n5a" secondAttribute="leading" constant="157" id="r5y-4E-H04"/>
-                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-y1-Qq1">
                                 <rect key="frame" x="0.0" y="98" width="286" height="77"/>
@@ -118,12 +147,24 @@
                                                     <color key="baseForegroundColor" red="0.68235294117647061" green="0.30980392156862746" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpc-0u-HN9">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="77"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AaP-8L-NvV"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="NNC-Yp-Rog" secondAttribute="bottom" constant="10" id="8Rf-lp-CxC"/>
+                                            <constraint firstItem="cpc-0u-HN9" firstAttribute="top" secondItem="GUR-cT-2KH" secondAttribute="top" id="B4b-mX-3VL"/>
                                             <constraint firstItem="NNC-Yp-Rog" firstAttribute="leading" secondItem="GUR-cT-2KH" secondAttribute="leadingMargin" id="Dob-JM-Bl7"/>
+                                            <constraint firstAttribute="trailing" secondItem="cpc-0u-HN9" secondAttribute="trailing" id="jCu-vW-1OK"/>
                                             <constraint firstItem="NNC-Yp-Rog" firstAttribute="leading" secondItem="499-YJ-aK1" secondAttribute="leading" id="kIA-WJ-8tE"/>
+                                            <constraint firstAttribute="bottom" secondItem="cpc-0u-HN9" secondAttribute="bottom" id="kMX-c4-oGW"/>
                                             <constraint firstItem="NNC-Yp-Rog" firstAttribute="top" secondItem="499-YJ-aK1" secondAttribute="bottom" constant="8" symbolic="YES" id="shx-J3-3SF"/>
+                                            <constraint firstItem="cpc-0u-HN9" firstAttribute="leading" secondItem="GUR-cT-2KH" secondAttribute="leading" id="y3S-RJ-SIn"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SH9-gd-9pI">
@@ -150,12 +191,24 @@
                                                     <color key="baseForegroundColor" red="0.12549019607843137" green="0.61176470588235299" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xa-dj-yVA">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="77"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dbm-9m-YQ5"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="A5i-3Z-djk" secondAttribute="bottom" constant="10" id="1Tr-bs-4Cb"/>
                                             <constraint firstItem="A5i-3Z-djk" firstAttribute="top" secondItem="57M-1s-8rI" secondAttribute="bottom" constant="8" symbolic="YES" id="74S-cR-KzC"/>
+                                            <constraint firstAttribute="bottom" secondItem="7Xa-dj-yVA" secondAttribute="bottom" id="I4l-x3-Jcw"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Xa-dj-yVA" secondAttribute="trailing" id="MKP-6v-mSi"/>
                                             <constraint firstItem="A5i-3Z-djk" firstAttribute="leading" secondItem="57M-1s-8rI" secondAttribute="leading" id="iwU-Yl-2ZU"/>
                                             <constraint firstItem="A5i-3Z-djk" firstAttribute="leading" secondItem="SH9-gd-9pI" secondAttribute="leadingMargin" id="mqG-6a-fgr"/>
+                                            <constraint firstItem="7Xa-dj-yVA" firstAttribute="top" secondItem="SH9-gd-9pI" secondAttribute="top" id="us0-Nb-hmC"/>
+                                            <constraint firstItem="7Xa-dj-yVA" firstAttribute="leading" secondItem="SH9-gd-9pI" secondAttribute="leading" id="xeB-jb-7Rk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -190,9 +243,21 @@
                                                     <color key="baseForegroundColor" red="0.070588235294117646" green="0.57647058823529407" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5U-vk-dpn">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="77"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vf3-7V-jtz"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="a9u-Zj-O7R" firstAttribute="leading" secondItem="4Iw-vw-NIr" secondAttribute="leadingMargin" id="5Vc-DN-3cq"/>
+                                            <constraint firstAttribute="bottom" secondItem="l5U-vk-dpn" secondAttribute="bottom" id="bMU-kP-xHA"/>
+                                            <constraint firstItem="l5U-vk-dpn" firstAttribute="top" secondItem="4Iw-vw-NIr" secondAttribute="top" id="bN7-0w-Wb4"/>
+                                            <constraint firstItem="l5U-vk-dpn" firstAttribute="leading" secondItem="4Iw-vw-NIr" secondAttribute="leading" id="ilD-Ro-hJe"/>
+                                            <constraint firstAttribute="trailing" secondItem="l5U-vk-dpn" secondAttribute="trailing" id="u6m-Mk-HC2"/>
                                             <constraint firstItem="a9u-Zj-O7R" firstAttribute="top" secondItem="4Iw-vw-NIr" secondAttribute="top" constant="10" id="waI-tk-tqF"/>
                                             <constraint firstItem="pJo-bf-wM5" firstAttribute="top" secondItem="a9u-Zj-O7R" secondAttribute="bottom" constant="8" symbolic="YES" id="zTB-rn-LCc"/>
                                             <constraint firstItem="a9u-Zj-O7R" firstAttribute="leading" secondItem="pJo-bf-wM5" secondAttribute="leading" id="zet-Jp-MSq"/>
@@ -222,11 +287,23 @@
                                                     <color key="baseForegroundColor" red="0.19215686269999999" green="0.67450980390000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3u-Fk-rHM">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="77"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xBm-24-hhS"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="G3u-Fk-rHM" secondAttribute="bottom" id="3E2-t3-Jov"/>
                                             <constraint firstItem="eia-SE-0hE" firstAttribute="top" secondItem="mSj-GG-z4s" secondAttribute="bottom" constant="8" symbolic="YES" id="8QI-r5-wRa"/>
+                                            <constraint firstItem="G3u-Fk-rHM" firstAttribute="top" secondItem="r96-KS-8ww" secondAttribute="top" id="enM-xX-RkW"/>
                                             <constraint firstItem="mSj-GG-z4s" firstAttribute="leading" secondItem="r96-KS-8ww" secondAttribute="leadingMargin" id="j1M-Dh-ZxJ"/>
+                                            <constraint firstItem="G3u-Fk-rHM" firstAttribute="leading" secondItem="r96-KS-8ww" secondAttribute="leading" id="orL-2h-VQW"/>
                                             <constraint firstItem="mSj-GG-z4s" firstAttribute="top" secondItem="r96-KS-8ww" secondAttribute="top" constant="10" id="uFc-Nf-zYK"/>
+                                            <constraint firstAttribute="trailing" secondItem="G3u-Fk-rHM" secondAttribute="trailing" id="vfC-SW-cQd"/>
                                             <constraint firstItem="mSj-GG-z4s" firstAttribute="leading" secondItem="eia-SE-0hE" secondAttribute="leading" id="vuX-su-FDM"/>
                                         </constraints>
                                     </view>
@@ -262,10 +339,22 @@
                                                     <color key="baseForegroundColor" red="0.11764705882352941" green="0.60784313725490191" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyr-Q2-aL2">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="77"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WeE-ug-Bg8"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="qjy-SB-hVV" firstAttribute="leading" secondItem="tSC-oc-cgT" secondAttribute="leading" id="0ep-2N-MRG"/>
+                                            <constraint firstAttribute="bottom" secondItem="kyr-Q2-aL2" secondAttribute="bottom" id="1s6-vK-p5R"/>
+                                            <constraint firstItem="kyr-Q2-aL2" firstAttribute="leading" secondItem="3lC-4Y-LEs" secondAttribute="leading" id="9Cf-AH-DzP"/>
                                             <constraint firstItem="qjy-SB-hVV" firstAttribute="leading" secondItem="3lC-4Y-LEs" secondAttribute="leadingMargin" id="Omz-9M-CRD"/>
+                                            <constraint firstAttribute="trailing" secondItem="kyr-Q2-aL2" secondAttribute="trailing" id="YWc-79-gIE"/>
+                                            <constraint firstItem="kyr-Q2-aL2" firstAttribute="top" secondItem="3lC-4Y-LEs" secondAttribute="top" id="ctz-lF-Upt"/>
                                             <constraint firstAttribute="bottom" secondItem="qjy-SB-hVV" secondAttribute="bottom" constant="10" id="edd-on-qNg"/>
                                             <constraint firstItem="qjy-SB-hVV" firstAttribute="top" secondItem="tSC-oc-cgT" secondAttribute="bottom" constant="8" symbolic="YES" id="frg-H6-DmZ"/>
                                         </constraints>
@@ -294,12 +383,24 @@
                                                     <color key="baseForegroundColor" red="0.97647058823529409" green="0.39215686274509803" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DI3-ej-Ebb">
+                                                <rect key="frame" x="0.0" y="0.0" width="129" height="77"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bYB-q1-cCz"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="qab-PF-evX" firstAttribute="top" secondItem="dxO-2x-tR1" secondAttribute="bottom" constant="8" symbolic="YES" id="1g6-up-1OC"/>
                                             <constraint firstItem="qab-PF-evX" firstAttribute="leading" secondItem="wpU-eb-xD6" secondAttribute="leadingMargin" id="Jo3-hv-2fq"/>
                                             <constraint firstItem="qab-PF-evX" firstAttribute="leading" secondItem="dxO-2x-tR1" secondAttribute="leading" id="Skk-7L-vKh"/>
+                                            <constraint firstItem="DI3-ej-Ebb" firstAttribute="leading" secondItem="wpU-eb-xD6" secondAttribute="leading" id="XJH-tH-4S4"/>
                                             <constraint firstAttribute="bottom" secondItem="qab-PF-evX" secondAttribute="bottom" constant="10" id="gs6-nn-Ihr"/>
+                                            <constraint firstAttribute="bottom" secondItem="DI3-ej-Ebb" secondAttribute="bottom" id="pJw-Aa-VSV"/>
+                                            <constraint firstItem="DI3-ej-Ebb" firstAttribute="top" secondItem="wpU-eb-xD6" secondAttribute="top" id="qFo-yW-gc8"/>
+                                            <constraint firstAttribute="trailing" secondItem="DI3-ej-Ebb" secondAttribute="trailing" id="qZ6-LL-4Ux"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -336,13 +437,21 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="evenstButton" destination="DI3-ej-Ebb" id="u6P-6c-3s8"/>
                 <outlet property="eventsView" destination="wpU-eb-xD6" id="mAU-1g-HIk"/>
+                <outlet property="feedsButton" destination="kyr-Q2-aL2" id="EkN-U8-su0"/>
                 <outlet property="feedsView" destination="3lC-4Y-LEs" id="40A-rr-9go"/>
+                <outlet property="friendsButton" destination="G3u-Fk-rHM" id="Brv-sj-B1D"/>
                 <outlet property="friendsView" destination="r96-KS-8ww" id="m01-Is-wtp"/>
+                <outlet property="groupsButton" destination="7Xa-dj-yVA" id="bJX-GW-8Q1"/>
                 <outlet property="groupsView" destination="SH9-gd-9pI" id="yXY-Vw-W3P"/>
+                <outlet property="marketPlaceButton" destination="l5U-vk-dpn" id="16c-K9-Zqw"/>
                 <outlet property="marketplaceView" destination="4Iw-vw-NIr" id="P9b-8u-CM0"/>
+                <outlet property="memoriesButton" destination="yW7-tA-Z21" id="0Ag-B7-kfY"/>
                 <outlet property="memoriesView" destination="GMk-Vb-Gwi" id="fxh-kh-Woc"/>
+                <outlet property="savedButton" destination="cpc-0u-HN9" id="xQS-5N-gZf"/>
                 <outlet property="savedView" destination="GUR-cT-2KH" id="0Fk-QG-pgz"/>
+                <outlet property="videoButton" destination="vZz-s4-iki" id="QpQ-8P-JEA"/>
                 <outlet property="videoView" destination="qfb-C4-0IY" id="N5r-7C-DKo"/>
             </connections>
             <point key="canvasLocation" x="140.45801526717557" y="153.16901408450704"/>

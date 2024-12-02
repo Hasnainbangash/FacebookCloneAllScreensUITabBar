@@ -48,12 +48,24 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-6E-v23">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="0aN-gc-Imz" eventType="touchUpInside" id="bmj-7E-O6x"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="e0v-kF-9Lw" secondAttribute="trailing" constant="8" id="1vO-dy-pyz"/>
+                                    <constraint firstItem="XHN-6E-v23" firstAttribute="top" secondItem="M2V-4s-SR8" secondAttribute="top" id="8nx-pU-AUa"/>
                                     <constraint firstItem="e0v-kF-9Lw" firstAttribute="leading" secondItem="M2V-4s-SR8" secondAttribute="leading" constant="8" id="C64-p4-VnV"/>
                                     <constraint firstItem="e0v-kF-9Lw" firstAttribute="top" secondItem="M2V-4s-SR8" secondAttribute="top" constant="9" id="Sak-Hm-a91"/>
+                                    <constraint firstItem="XHN-6E-v23" firstAttribute="leading" secondItem="M2V-4s-SR8" secondAttribute="leading" id="buZ-ak-GWt"/>
                                     <constraint firstAttribute="width" constant="240" id="eoy-1J-b0I"/>
+                                    <constraint firstAttribute="trailing" secondItem="XHN-6E-v23" secondAttribute="trailing" id="g3f-ze-sA8"/>
+                                    <constraint firstAttribute="bottom" secondItem="XHN-6E-v23" secondAttribute="bottom" id="gu8-zx-Zg7"/>
                                     <constraint firstAttribute="height" constant="42" id="qZ1-nS-tW8"/>
                                     <constraint firstAttribute="bottom" secondItem="e0v-kF-9Lw" secondAttribute="bottom" constant="9" id="xZz-vj-Ybh"/>
                                 </constraints>
@@ -87,14 +99,26 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-Db-WHz">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="0aN-gc-Imz" eventType="touchUpInside" id="FzD-SX-eIq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="7rS-MD-NOv"/>
                                     <constraint firstItem="Bhh-PW-BQa" firstAttribute="top" secondItem="OFg-cM-qxj" secondAttribute="top" constant="9" id="ANE-zq-KgT"/>
                                     <constraint firstAttribute="trailing" secondItem="Bhh-PW-BQa" secondAttribute="trailing" constant="8" id="Bif-Ap-zjI"/>
+                                    <constraint firstItem="d6h-Db-WHz" firstAttribute="leading" secondItem="OFg-cM-qxj" secondAttribute="leading" id="F8Y-ZP-4eH"/>
                                     <constraint firstItem="Bhh-PW-BQa" firstAttribute="leading" secondItem="OFg-cM-qxj" secondAttribute="leading" constant="8" id="Hk2-n4-1hi"/>
+                                    <constraint firstAttribute="trailing" secondItem="d6h-Db-WHz" secondAttribute="trailing" id="RfZ-AU-cam"/>
                                     <constraint firstAttribute="height" constant="42" id="Z2I-Gi-YMa"/>
                                     <constraint firstAttribute="bottom" secondItem="Bhh-PW-BQa" secondAttribute="bottom" constant="9" id="bUL-vr-iJ6"/>
+                                    <constraint firstAttribute="bottom" secondItem="d6h-Db-WHz" secondAttribute="bottom" id="eEv-z2-lVX"/>
+                                    <constraint firstItem="d6h-Db-WHz" firstAttribute="top" secondItem="OFg-cM-qxj" secondAttribute="top" id="gMN-ll-fVl"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrC-rM-v6c">
@@ -126,10 +150,22 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJo-W9-T4s">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="0aN-gc-Imz" eventType="touchUpInside" id="ZAF-EN-DFw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="bLH-wI-en8" firstAttribute="leading" secondItem="WrC-rM-v6c" secondAttribute="leading" constant="8" id="E6r-Ta-sPz"/>
+                                    <constraint firstAttribute="trailing" secondItem="jJo-W9-T4s" secondAttribute="trailing" id="K3U-Vw-EWN"/>
+                                    <constraint firstItem="jJo-W9-T4s" firstAttribute="leading" secondItem="WrC-rM-v6c" secondAttribute="leading" id="NzZ-8i-iWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="jJo-W9-T4s" secondAttribute="bottom" id="OcR-Td-D87"/>
                                     <constraint firstAttribute="trailing" secondItem="bLH-wI-en8" secondAttribute="trailing" constant="8" id="ayR-FE-vLc"/>
+                                    <constraint firstItem="jJo-W9-T4s" firstAttribute="top" secondItem="WrC-rM-v6c" secondAttribute="top" id="hku-4f-XMD"/>
                                     <constraint firstAttribute="width" constant="240" id="i4b-eQ-oQQ"/>
                                     <constraint firstAttribute="height" constant="42" id="jrR-xf-cvZ"/>
                                     <constraint firstAttribute="bottom" secondItem="bLH-wI-en8" secondAttribute="bottom" constant="9" id="mG9-Xm-bTk"/>
@@ -165,14 +201,26 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXX-Nn-G0K">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="0aN-gc-Imz" eventType="touchUpInside" id="viP-sg-rtM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MXX-Nn-G0K" secondAttribute="trailing" id="3Tr-ty-p5G"/>
+                                    <constraint firstAttribute="bottom" secondItem="MXX-Nn-G0K" secondAttribute="bottom" id="6x1-ty-TfQ"/>
                                     <constraint firstAttribute="bottom" secondItem="Jpo-aH-qGi" secondAttribute="bottom" constant="9" id="CA1-i7-zYB"/>
                                     <constraint firstAttribute="height" constant="42" id="Kp8-Gx-lsT"/>
                                     <constraint firstAttribute="trailing" secondItem="Jpo-aH-qGi" secondAttribute="trailing" constant="8" id="L1b-iZ-bU7"/>
                                     <constraint firstAttribute="width" constant="240" id="O4h-E9-0Jz"/>
                                     <constraint firstItem="Jpo-aH-qGi" firstAttribute="leading" secondItem="JSP-pQ-9xn" secondAttribute="leading" constant="8" id="PDr-0C-57k"/>
                                     <constraint firstItem="Jpo-aH-qGi" firstAttribute="top" secondItem="JSP-pQ-9xn" secondAttribute="top" constant="9" id="Pat-D3-kIC"/>
+                                    <constraint firstItem="MXX-Nn-G0K" firstAttribute="leading" secondItem="JSP-pQ-9xn" secondAttribute="leading" id="m7c-dg-VoZ"/>
+                                    <constraint firstItem="MXX-Nn-G0K" firstAttribute="top" secondItem="JSP-pQ-9xn" secondAttribute="top" id="rMJ-UV-oIf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ge7-Mf-IzC">
@@ -204,14 +252,26 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qC-nq-aO8">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="42"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="0aN-gc-Imz" eventType="touchUpInside" id="Yrf-1F-Mbf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="4bI-Wv-FaI" secondAttribute="bottom" constant="9" id="0XK-OZ-SlN"/>
                                     <constraint firstAttribute="width" constant="240" id="2JU-7N-7qR"/>
+                                    <constraint firstAttribute="trailing" secondItem="6qC-nq-aO8" secondAttribute="trailing" id="8pA-on-Ns6"/>
                                     <constraint firstAttribute="trailing" secondItem="4bI-Wv-FaI" secondAttribute="trailing" constant="8" id="DOG-N0-IRN"/>
                                     <constraint firstAttribute="height" constant="42" id="Ebo-bm-BBN"/>
                                     <constraint firstItem="4bI-Wv-FaI" firstAttribute="leading" secondItem="ge7-Mf-IzC" secondAttribute="leading" constant="8" id="FIX-Pg-35F"/>
+                                    <constraint firstItem="6qC-nq-aO8" firstAttribute="top" secondItem="ge7-Mf-IzC" secondAttribute="top" id="cOo-vE-jua"/>
+                                    <constraint firstItem="6qC-nq-aO8" firstAttribute="leading" secondItem="ge7-Mf-IzC" secondAttribute="leading" id="t95-cK-4if"/>
                                     <constraint firstItem="4bI-Wv-FaI" firstAttribute="top" secondItem="ge7-Mf-IzC" secondAttribute="top" constant="9" id="uWL-Ue-cPJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="6qC-nq-aO8" secondAttribute="bottom" id="yOH-rn-SJD"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Lh-vE-IxY">
@@ -243,11 +303,23 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ3-Dm-L6o">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="ButtonPressed:" destination="0aN-gc-Imz" eventType="touchUpInside" id="jkH-H5-bnL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="lEb-CV-osB" secondAttribute="trailing" constant="8" id="Lu3-e6-b2K"/>
+                                    <constraint firstAttribute="bottom" secondItem="iJ3-Dm-L6o" secondAttribute="bottom" id="QQu-MY-0Qh"/>
                                     <constraint firstItem="lEb-CV-osB" firstAttribute="top" secondItem="9Lh-vE-IxY" secondAttribute="top" constant="9" id="QyB-XL-mje"/>
                                     <constraint firstAttribute="height" constant="42" id="Tzg-CT-JZ0"/>
+                                    <constraint firstItem="iJ3-Dm-L6o" firstAttribute="top" secondItem="9Lh-vE-IxY" secondAttribute="top" id="UJF-Lr-PEW"/>
+                                    <constraint firstItem="iJ3-Dm-L6o" firstAttribute="leading" secondItem="9Lh-vE-IxY" secondAttribute="leading" id="d3M-uh-cTN"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJ3-Dm-L6o" secondAttribute="trailing" id="fhO-Vy-6Q0"/>
                                     <constraint firstAttribute="width" constant="240" id="q0r-70-MeP"/>
                                     <constraint firstItem="lEb-CV-osB" firstAttribute="leading" secondItem="9Lh-vE-IxY" secondAttribute="leading" constant="8" id="vD9-GB-0Dt"/>
                                     <constraint firstAttribute="bottom" secondItem="lEb-CV-osB" secondAttribute="bottom" constant="9" id="vTv-ML-8y7"/>
@@ -264,6 +336,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="1gj-6L-hRK"/>
+            <connections>
+                <outlet property="deviceRequestButton" destination="jJo-W9-T4s" id="uTA-e0-vcM"/>
+                <outlet property="linkHistory" destination="iJ3-Dm-L6o" id="ND6-KB-BRm"/>
+                <outlet property="orderAndPaymentsButton" destination="6qC-nq-aO8" id="WvU-A3-VSs"/>
+                <outlet property="privicayCenterButton" destination="d6h-Db-WHz" id="Jrn-Ve-GFn"/>
+                <outlet property="recentActivitiesButton" destination="MXX-Nn-G0K" id="5qp-jc-55P"/>
+                <outlet property="settingButton" destination="XHN-6E-v23" id="aXl-7Q-xLL"/>
+            </connections>
             <point key="canvasLocation" x="-51.145038167938928" y="138.02816901408451"/>
         </tableViewCell>
     </objects>

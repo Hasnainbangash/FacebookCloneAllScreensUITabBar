@@ -13,11 +13,14 @@ class MenuController: UIViewController {
     
     var sectionStatus: [Bool] = [false, false, true, true, true, false]
     
+//    var videosMemoriesSavedAllCell = VideosMemoriesSavedAllCell()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+//        videosMemoriesSavedAllCell.delegate = self
         menuControllerTableView.dataSource = self
         menuControllerTableView.delegate = self
         
@@ -38,7 +41,9 @@ class MenuController: UIViewController {
         menuControllerTableView.register(UINib(nibName: K.MenuCell.NibNames.settingAndPrivacyHeaderCellNibName, bundle: nil), forCellReuseIdentifier: K.MenuCell.Identifiers.settingAndPrivacyHeaderCellIdentifier)
         
         menuControllerTableView.register(UINib(nibName: K.MenuCell.NibNames.videosMemoriesSavedAllCellNibName, bundle: nil), forCellReuseIdentifier: K.MenuCell.Identifiers.videosMemoriesSavedAllCellIdentifier)
+        
     }
+
 }
 
 extension MenuController: UITableViewDataSource {
@@ -63,15 +68,19 @@ extension MenuController: UITableViewDataSource {
             return cell
         case 1:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.videosMemoriesSavedAllCellIdentifier, for: indexPath) as! VideosMemoriesSavedAllCell
+            cell.delegate = self
             return cell
         case 2:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.helpAndSupportBodyCellIdentifier, for: indexPath) as! HelpAndSupportBodyCell
+            cell.delegate = self
             return cell
         case 3:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.settingAndPrivacyBodyCellIdentifier, for: indexPath) as! SettingandPrivacyBodyCell
+            cell.delegate = self
             return cell
         case 4:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.alsoFromMetaBodyCellIdentifier, for: indexPath) as! AlsoFromMetaBodyCell
+            cell.delegate = self
             return cell
         case 5:
             let cell = menuControllerTableView.dequeueReusableCell(withIdentifier: K.MenuCell.Identifiers.logoutCellCellIdentifier, for: indexPath) as! LogoutCell
@@ -142,6 +151,8 @@ extension MenuController :UITableViewDelegate {
         }
     }
     
+    
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
@@ -158,6 +169,90 @@ extension MenuController :UITableViewDelegate {
             return 10
         default:
             return 100
+        }
+    }
+}
+
+extension MenuController: VideosMemoriesSavedAllCellDelegate {
+    func didPressButton(withTag tag: Int) {
+        switch tag {
+        case 1:
+            self.performSegue(withIdentifier: "MenuScreentoVideoScreen", sender: self)
+        case 2:
+            self.performSegue(withIdentifier: "MenuScreentoMemoriesScreen", sender: self)
+        case 3:
+            self.performSegue(withIdentifier: "MenuScreentoSavedScreen", sender: self)
+        case 4:
+            self.performSegue(withIdentifier: "MenuScreentoGroupsScreen", sender: self)
+        case 5:
+            self.performSegue(withIdentifier: "MenuScreentoMarketplaceScreen", sender: self)
+        case 6:
+            self.performSegue(withIdentifier: "MenuScreentoFriendsScreen", sender: self)
+        case 7:
+            self.performSegue(withIdentifier: "MenuScreentoFeedsScreen", sender: self)
+        case 8:
+            self.performSegue(withIdentifier: "MenuScreentoEventsScreen", sender: self)
+        default:
+            break
+        }
+    }
+}
+
+extension MenuController: HelpAndSupportBodyCellDelegate {
+    func HelpPressButton(withTag tag: Int) {
+        switch tag {
+        case 1:
+            self.performSegue(withIdentifier: "MenuScreentoHelpCenterScreen", sender: self)
+        case 2:
+            self.performSegue(withIdentifier: "MenuScreentoAccountStatusScreen", sender: self)
+        case 3:
+            self.performSegue(withIdentifier: "MenuScreentoSupportInboxScreen", sender: self)
+        case 4:
+            self.performSegue(withIdentifier: "MenuScreentoReportaProblemScreen", sender: self)
+        case 5:
+            self.performSegue(withIdentifier: "MenuScreentoSafetyScreen", sender: self)
+        case 6:
+            self.performSegue(withIdentifier: "MenuScreentoTermsAndPoliciesScreen", sender: self)
+        default:
+            break
+        }
+    }
+}
+
+extension MenuController: SettingAndPrivacyBodyCellDelegate {
+    func SettingPrivacyPressButton(withTag tag: Int) {
+        switch tag {
+        case 1:
+            self.performSegue(withIdentifier: "MenuScreentoSettingScreen", sender: self)
+        case 2:
+            self.performSegue(withIdentifier: "MenuScreentoPrivacyScreen", sender: self)
+        case 3:
+            self.performSegue(withIdentifier: "MenuScreentoDeviceRequestScreen", sender: self)
+        case 4:
+            self.performSegue(withIdentifier: "MenuScreentoRecentandActivitiesScreenScreen", sender: self)
+        case 5:
+            self.performSegue(withIdentifier: "MenuScreentoOrdersAndPaymentsScreen", sender: self)
+        case 6:
+            self.performSegue(withIdentifier: "MenuScreentoLinkHistoryScreen", sender: self)
+        default:
+            break
+        }
+    }
+}
+
+extension MenuController: AlsoFromMetaBdyDelegate {
+    func AlsoFromMetaPressButton(withTag tag: Int) {
+        switch tag {
+        case 1:
+            self.performSegue(withIdentifier: "MenuScreentoThreadApp", sender: self)
+        case 2:
+            self.performSegue(withIdentifier: "MenuScreentoMessengerApp", sender: self)
+        case 3:
+            self.performSegue(withIdentifier: "MenuScreentoInstagramApp", sender: self)
+        case 4:
+            self.performSegue(withIdentifier: "MenuScreentoWhatsappApp", sender: self)
+        default:
+            break
         }
     }
 }
