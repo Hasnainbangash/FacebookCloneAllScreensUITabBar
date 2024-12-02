@@ -11,7 +11,7 @@ class MenuController: UIViewController {
 
     @IBOutlet weak var menuControllerTableView: UITableView!
     
-    var sectionStatus: [Bool] = [false, false, true, true, true, true]
+    var sectionStatus: [Bool] = [false, false, true, true, true, false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
